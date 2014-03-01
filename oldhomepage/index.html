@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html dir="ltr" lang="zh">
+<head>
+<meta name="format-detection" content="telephone=no" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<title>安同 | 开源青春，开源中国</title>
+<meta name="author" content="AnthonOS"/>
+<meta name="keywords" content="安同,AnthonOS,Linux,开源"/>
+<meta name="description" content="欢迎来到安同开源社区！"/>
+<!-- FOR THEME -->
+<link href="css/style.css" rel="stylesheet" type='text/css' />
+<link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'> 
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<link href="images/icon.png" rel="shortcut icon" />
+<link href="images/icon.png" rel="apple-touch-icon-precomposed" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<style>
+.fluid_container {
+    margin: 0;
+    max-width: 1000px;
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<script type='text/javascript' src='scripts/jquery.min.js'></script>
+<script type='text/javascript' src='scripts/jquery.mobile.customized.min.js'></script>
+<script type='text/javascript' src='scripts/jquery.easing.1.3.js'></script> 
+<script type='text/javascript' src='scripts/camera.min.js'></script> 
+
+<script>
+    jQuery(function(){
+        
+        jQuery('#camera_wrap_4').camera({
+            height: 'auto',
+            loader: 'bar',
+            pagination: false,
+            thumbnails: false,
+            hover: false,
+            opacityOnGrid: false,
+            imagePath: 'images/'
+        });
+
+    });
+</script>
+
+</head>
+
+<body>
+ <div class="fluid_container">
+     <div class="camera_wrap camera_emboss pattern_1" id="camera_wrap_4">
+         <div data-thumb="images/slides/thumbs/bridge.jpg" data-src="images/slides/01.jpg">
+         </div>
+         <div data-thumb="images/slides/thumbs/leaf.jpg" data-src="images/slides/02.jpg">
+         </div>
+         <div data-thumb="images/slides/thumbs/road.jpg" data-src="images/slides/03.jpg">
+         </div>
+         <div data-thumb="images/slides/thumbs/sea.jpg" data-src="images/slides/04.jpg">
+         </div>
+     </div><!-- #camera_wrap_3 -->
+ </div><!-- .fluid_container -->
+
+<!--  导航信息  -->
+<div class="message" id="colorful_here">
+    <div id="nav">
+        <div class="footer_one">
+            <span id="footer_title">关于</span>
+            <hr size="1" color="#CECECE"><br />
+            <span id="footer_content">安同开源社区是主要由学生群体组成，致力于开源于普通用户群体中普及。欲获知更多信息，请前往社区的不同站点。<br />
+                <!--    <br /><a href="#">更多...</a>-->
+            </span>
+        </div>
+        <div class="footer_span"></div>
+
+        <div class="footer_two">
+            <span id="footer_title">导航</span>
+            <hr size="1" color="#CECECE"><br />
+            <div id="footer_content">
+                <li><a href="http://forum.anthonos.org" id="footer_nav">社区</a></li>
+                <li><a href="http://wiki.anthonos.org" id="footer_nav">百科</a></li>
+                <li><a href="http://news.anthonos.org" id="footer_nav">资讯</a></li>
+                <li><a href="http://anthon.dormforce.net/status" id="footer_nav">仓库</a></li>
+                <li><a href="http://mirror.anthonos.org/junde-studio" id="footer_nav">俊德工作室</a></li>
+                <li><a href="http://github.com/AOSC-Dev" id="footer_nav">Git</a></li>
+            </div>
+        </div>
+        <div class="footer_span"></div>
+
+        <div class="footer_three">
+            <span id="footer_title">信息订阅 [正在实现]</span>
+            <hr size="1" color="#CECECE"><br />
+            <span id="footer_content">
+            了解安同的最新动态<br /><br />
+            <p>
+                <form action="#" method="post">
+                    <input type="text" name="email" size="20" id="form">&nbsp;&nbsp;&nbsp;
+                    <input type="submit" name="sub" id="form">
+                </form>
+            </p>
+            <br />
+            <div class="one"><a href="http://weibo.com/anthondev"><img src="./images/xl.png" width="25"></a></div>
+        </span>
+        </div>
+        <div class="footer_span"></div>
+        
+        <div class="footer_four" id="footer_content">
+            <span id="footer_title">联系方式</span>
+            <hr size="1" color="#CECECE"><br />
+            <span id="contact_title">BUG反馈</span><br />
+			<span id="contact_title"><a href="http://bugs.anthonos.org">bugs.anthonos.org</a></span><br />
+            <span id="contact_title">E-mail</span><br />
+            <span id="contact_con">anthon.developers@gmail.com</span><br />
+            <span id="contact_title">QQ群</span><br />
+            <span id="contact_con">125016052</span>
+        </div>
+        <div class="footer_span"></div>
+        
+        <div class="footer_five">
+            <span id="footer_title">加入我们</span>
+                <hr size="1" color="#CECECE"><br />
+                <span id="footer_content">
+                    安同开发组欢迎一切爱好者加入，我们社区保持对开发和贡献的自由。如果你对安同充满信心，并对于 Linux 或开源社区的运作有着一定的常识和了解，我们时刻敞开大门欢迎你的加入！
+                    <br /><br />
+                        <!--<a href="#">更多...</a>-->
+                </span>
+            </span>
+        </div>
+    </div>
+    <div class="colorful">
+        <div id="color_1" onClick="colorful_here.style.backgroundColor='#005999';set_color('#005999')"></div>
+        <div id="color_2" onClick="colorful_here.style.backgroundColor='#8800A3';set_color('#8800A3')"></div>
+        <div id="color_3" onClick="colorful_here.style.backgroundColor='#322F33';set_color('#322F33')"></div>
+        <div id="color_4" onClick="colorful_here.style.backgroundColor='#063D07';set_color('#063D07')"></div>
+        <div id="color_5" onClick="colorful_here.style.backgroundColor='#BF2900';set_color('#BF2900')"></div>
+    </div>
+</div>
+
+<div class="nav_logo">
+    <div class="logo">
+		<div class="logo_one"><a href="http://forum.anthonos.org/forum.php?gid=117"><img src="images/next.png" height="75" class="resize_logo"></a></div>
+        <div class="logo_one"><a href="http://anthonusing.forum.anthonos.org/"><img src="images/at.png" height="75" class="resize_logo"></a></div>
+        <div class="logo_one"><a href="http://forum.anthonos.org/forum.php?gid=88"><img src="images/heart.png" height="75" class="resize_logo"></a></div>
+        <div class="logo_one"><a href="http://centralpoint.forum.anthonos.org/"><img src="images/cp.png" height="75" class="resize_logo"></div>
+    </div>
+</div>
+
+<!--
+<div class="mess_box">
+    <span class="org_box col"></span>
+    <span>这是安同的首页，一堆东西不知道什么情况这是安同的首页，一堆东西不知道什么情况这是安同的首页，一堆东西不知道什么情况这是安同的首页，一堆东西不知道什么情况这是安同的首页，</span>
+</div>
+-->
+
+<script language=javascript>
+function get_cookie(name_to_get) {
+
+    var cookie_pair
+    var cookie_name
+    var cookie_value
+    var cookie_array = document.cookie.split("; ")
+    for (counter = 0; counter < cookie_array.length; counter++) {
+        cookie_pair = cookie_array[counter].split("=")
+        cookie_name = cookie_pair[0]
+        cookie_value = cookie_pair[1]
+        if (cookie_name == name_to_get) {
+            return unescape(cookie_value)
+        }
+    }
+    return null
+}
+var bg_color = get_cookie("bgColor_cookie")
+function set_color(color_val) {
+ set_cookie("bgColor_cookie", color_val, 365, "/")
+}
+
+function set_cookie(cookie_name, cookie_value, cookie_expire, cookie_path, cookie_domain, cookie_secure) {
+    var cookie_string = cookie_name + "=" + cookie_value
+    if (cookie_expire) {
+        var expire_date = new Date()
+        var ms_from_now = cookie_expire * 24 * 60 * 60 * 1000
+        expire_date.setTime(expire_date.getTime() + ms_from_now)
+        var expire_string = expire_date.toGMTString()
+        cookie_string += "; expires=" + expire_string
+    }
+
+    if (cookie_path) {
+        cookie_string += "; path=" + cookie_path
+    }
+    if (cookie_domain) {
+        cookie_string += "; domain=" + cookie_domain
+    }
+    if (cookie_secure) {
+        cookie_string += "; true"
+    }
+    document.cookie = cookie_string
+}
+if (bg_color) {
+    bb1.style.backgroundColor = bg_color
+}
+</script>
+
+</body>
+</html>
