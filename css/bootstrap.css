@@ -761,6 +761,7 @@ pre code {
   margin-left: auto;
 }
 .row {
+  padding-bottom: 40px;
   margin-right: -15px;
   margin-left: -15px;
 }
