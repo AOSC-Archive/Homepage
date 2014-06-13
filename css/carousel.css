@@ -37,8 +37,7 @@ body {
 
 /* Carousel base class */
 .carousel {
-  height: 500px;
-  margin-bottom: 60px;
+  margin-top: 50px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -47,16 +46,11 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 500px;
   background-color: #777;
 }
 .carousel-inner > .item > img {
-  position: absolute;
-  align: center;
-  top: 0;
-  left: 0;
-  min-width: 1920px;
-  max-height: 500px;
+  width: 100%;
+  margin-bottom: 60px;
 }
 
 
