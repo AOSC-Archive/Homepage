@@ -10,11 +10,11 @@ Homepage of anthonos.org, powered by Bootstrap.
 * Add the **id attribute** into the tags which will be translated in **index.html** like: `<h2 id="row-dl">DOWNLOAD</h2>`
 * Insert the following code at the bottom of tag **body** in **index.html** in order to include the *Multi-Language Script*.
 ```
-<script type="text/javascript">
+<script type="text/javascript"><![CDATA[
     var g_location = "/index.html";
-</script>
-<script type="text/javascript" src="http://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-<script type="text/javascript" src="js/lang.min.js"></script>
+//]]></script>
+<script type="text/javascript" src="//lib.sinaapp.com/js/jquery.cookie/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/lang.min.js"></script>
 ```
 * Write the following code into the **index.html.zh-cn.js**.
 ```
