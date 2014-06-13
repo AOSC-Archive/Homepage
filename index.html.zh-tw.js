@@ -1,0 +1,10 @@
+$t("安同開源");
+$r("menu-home", "主頁");
+$r("menu-dl", "下載");
+$r("menu-fb", "反饋");
+$r("menu-repo", "倉庫");
+$r("menu-l10n", "本地化");
+$r("row-dl", "下載");
+$r("row-dl-text", "下載最新的 AOSC 作品！");
+$r("row-dl-btn", "走起&raquo;");
+$e();
