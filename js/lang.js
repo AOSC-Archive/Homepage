@@ -22,7 +22,7 @@ function defaultText_find(a){
     return false;
 }
 function $t(a){
-    $("title").text(a);
+    document.title = a;
 }
 function $r(a,b){
     var item = $("#"+a);

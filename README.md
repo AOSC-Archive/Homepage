@@ -11,7 +11,7 @@ Homepage of anthonos.org, powered by Bootstrap.
 * Insert the following code at the bottom of tag **body** in **index.html** in order to include the *Multi-Language Script*.
 ```
 <script src="//lib.sinaapp.com/js/jquery.cookie/jquery.cookie.js"></script>
-<script>var g_location = "/index.html";</script>
+<script type="text/javascript">var g_location = "/index.html";</script>
 <script src="/js/lang.min.js"></script>
 ```
 * Write the following code into the **index.html.zh-cn.js**.

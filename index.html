@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Jeff Bai <jeffbaichina@gmail.com>, Lion Yang <ionxlion@foxmail.com>, YeXiaoxing <ye@xiaoxing.us>">
@@ -13,6 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/carousel.css" rel="stylesheet">
+    <link href="/css/common.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -43,8 +43,9 @@
               <!-- Following structure is the language menu -->
               <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                  <a href="#" style="font-weight:bold; color:#aaa;" 
-                  class="dropdown-toggle" data-toggle="dropdown"><img src="/img/glyphicons_370_globe_af_grey.png" alt="Language"></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <img src="/img/glyphicons_370_globe_af_grey.png" alt="Language">
+                  </a>
                   <ul class="dropdown-menu">
                     <li><a href="#" onClick="reset_lang()">English</a></li>
                     <li><a href="#" onClick="manual_set_lang('zh-CN')">简体中文</a></li>
@@ -124,11 +125,11 @@
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading" id="opensource">The Power of Open Source<span class="text-muted"> Open &amp; Free!</span></h2> 
-          <p class="lead" id="opensource-p">Open Source brings collabration and share to advance of technology. Every project in AOSC are open source and free to share (NOT about money!).</p>
+          <p class="lead" id="opensource-p">Open Source brings collaboration and share to advance of technology. Every project in AOSC are open source and free to share <span class="nowarp">(NOT about money!)</span>.</p>
         </div>
         <div class="col-md-5">   
         
-        <img src="/img/Tux.png" height=350 width=350>
+        <img style="float: right;" src="/img/Tux.png" height=350 width=350>
         </div>
       </div>
 
@@ -139,7 +140,7 @@
           <img src="/img/peace.png" height=350 width=350>
         </div>
         <div class="col-md-7">
-          <h2 class="featurette-heading" id="peace">Tolerancy &amp; Friendliness <span class="text-muted">Not Only to Open Source</span></h2>
+          <h2 class="featurette-heading" id="peace">Tolerance &amp; Friendliness <span class="text-muted nowarp">Not Only to Open Source</span></h2>
           <p class="lead" id="peace-p">As we strongly suggests open source and freedom, we are not seeing non-free software or commercial software as our enemy - because we respect your choice, while we continues to love open source.</p>
         </div>
       </div>
@@ -147,10 +148,13 @@
       <hr class="featurette-divider">
 
       <!-- FOOTER -->
-      <footer>
-         <p>Copyleft 2014 - AOSC &middot; Page designed by Jeff Bai, Lion Yang, Joy Neop &middot; Page powered by <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="http://glyphicons.com/">GLYPHICONS</a> &middot; <a href="http://wenda.anthonos.org/article/2">Contact Us</a> &middot; <a href="http://wenda.anthonos.org/page/links">Friendly Links</a> &middot; <a href="http://wenda.anthonos.org/page/sponsor">Sponsors</a></p>
-         <p>2014 "安同开源" - <a href="http://www.miibeian.gov.cn/">粤ICP备14040623号</a> &middot; This website as seen probably won't be possible without our sponsors: UCloud and National Chi Nan University (their logos are as seen below).</p>
-         <p><img src="/img/ucloud.png"><img style="margin-left: 15px;" src="/img/ncnu_logo.png"></p>
+      <footer class="footer">
+         <p>Copyleft 2014 - AOSC &middot; Page designed by Jeff Bai, Lion Yang, Joy Neop, Arthur Wang &middot; Page powered by <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="http://glyphicons.com/">GLYPHICONS</a> &middot; <a href="http://wenda.anthonos.org/article/2">Contact Us</a> &middot; <a href="http://wenda.anthonos.org/page/links">Friendly Links</a> &middot; <a href="http://wenda.anthonos.org/page/sponsor">Sponsors</a></p>
+         <p>This website as seen probably won't be possible without our sponsors: UCloud and National Chi Nan University (their logos are as seen below).</p>
+         <p class="sponsors">
+         <img src="/img/ucloud.png" alt="ucloud"><img src="/img/ncnu_logo.png" alt="ncnu">
+         </p>
+         <p>2014 "安同开源" - <a href="http://www.miibeian.gov.cn/">粤ICP备14040623号</a></p>
       </footer>
 
     </div><!-- /.container -->
@@ -160,7 +164,7 @@
     <script src="//lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="//lib.sinaapp.com/js/jquery.cookie/jquery.cookie.js"></script>
-    <script>var g_location = "/index.html";</script>
+    <script type="text/javascript">var g_location = "/index.html";</script>
     <script src="/js/lang.min.js"></script>
 
   </body>

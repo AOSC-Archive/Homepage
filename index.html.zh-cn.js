@@ -21,6 +21,6 @@ $r("join-b", "GitHub 代码仓库&raquo;");
 $r("opensource", "开源的力量 <span class=\"text-muted\">开放，自由！</span>");
 $r("opensource-p", "开源，给技术的进步带来了协作和分享。安同开源社区的一切项目均为开源并且允许自由分享。");
 
-$r("peace", "包容和友好 <span class=\"text-muted\">不只是开源！</span>");
+$r("peace", "包容和友好 <span class=\"text-muted nowarp\">不只是开源！</span>");
 $r("peace-p", "在大力推进开源和自由的同时，我们不会因此对任何非自由或商业软件产生敌意，我们尊重你的选择，但我们最爱开源！");
 $e();

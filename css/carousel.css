@@ -30,7 +30,12 @@ body {
   padding-right: 15px;
   padding-left: 15px;
 }
-
+.navbar-header {
+  padding-left: 150px;
+}
+.navbar-header, .navbar-collapse {
+  height: 50px;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
