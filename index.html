@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Jeff Bai <jeffbaichina@gmail.com>, Lion Yang <ionxlion@foxmail.com>, YeXiaoxing <ye@xiaoxing.us>">
-    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="shortcut icon" href="/img/favicon.png">
 
     <title>AOSC - Home</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -23,7 +23,7 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
+    <link href="/css/carousel.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -56,12 +56,12 @@
               <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
                   <a href="#" style="font-weight:bold; color:#aaa;" 
-                  class="dropdown-toggle" data-toggle="dropdown">Language</a>
+                  class="dropdown-toggle" data-toggle="dropdown"><img src="/img/glyphicons_370_globe_af_grey.png" alt="Language"></a>
                   <ul class="dropdown-menu">
                     <li><a href="#" onClick="reset_lang()">English</a></li>
                     <li><a href="#" onClick="manual_set_lang('zh-CN')">简体中文</a></li>
                     <li><a href="#" onClick="manual_set_lang('zh-TW')">正體中文</a></li>
-                    <li><a href="#" onClick="manual_set_lang('ja')">日本語</a></li>
+                    <li><a href="#" onClick="manual_set_lang('ja')">にほんご</a></li>
                   </ul>
                 </li>
               </ul>
@@ -86,12 +86,17 @@
     <!-- Carousel items -->
     <div class="carousel-inner">
         <div class="active item">
-            <img src="img/02.png" alt="Slide 1">
+            <img src="/img/02.png" alt="Slide 1">
             <div class="carousel-caption">
             </div>
         </div>
         <div class="item">
-            <img src="img/01.png" alt="Slide 2">
+            <img src="/img/01.png" alt="Slide 2">
+            <div class="carousel-caption">
+            </div>
+        </div>
+        <div class="item">
+            <img src="/img/03.png" alt="Slide 3">
             <div class="carousel-caption">
             </div>
         </div>
@@ -115,19 +120,19 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img src="img/aosc.png">
+          <img src="/img/aosc.png">
           <h2 id="community">Community</h2>
           <p id="community-p">AOSC is a student-found-and-led community, with its base principle of tolerancy, the community welcomes participation and contribution from all over the world.</p> 
           <p><a id="community-b" class="btn btn-default" href="http://wenda.anthonos.org/" role="button">Community Forums &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img src="img/ast_small.png">
+          <img src="/img/ast_small.png">
           <h2 id="projects">Projects</h2>
           <p id="projects-p">AOSC holds a bucketful of projects, from this gateway of community, to the AOSC OS project. Everybody are welcome to participate, or contribute.</p>
           <p><a id="projects-b" class="btn btn-default" href="http://anthonos.org/download" role="button">Download Projects &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img src="img/next.png">
+          <img src="/img/next.png">
           <h2 id="join">Participate</h2>
           <p id="join-p">AOSC is open to participation of existing projects and new ones. Participations are always welcome! We hope your stay here will make you new friends inside!</p>
           <p><a id="join-b" class="btn btn-default" href="https://github.com/AOSC-Dev/" role="button">GitHub Repository &raquo;</a></p>
@@ -145,7 +150,7 @@
           <p class="lead" id="opensource-p">Open Source brings collabration and share to advance of technology. Every project in AOSC are open source and free to share (NOT about money!).</p>
         </div>
         <div class="col-md-5">
-          <img src="img/Tux.png" height=350 width=350>
+          <img src="/img/Tux.png" height=350 width=350>
         </div>
       </div>
 
@@ -153,7 +158,7 @@
 
       <div class="row featurette">
         <div class="col-md-5">
-          <img src="img/peace.png" height=350 width=350>
+          <img src="/img/peace.png" height=350 width=350>
         </div>
         <div class="col-md-7">
           <h2 class="featurette-heading" id="peace">Tolerancy &amp; Friendliness <span class="text-muted">Not Only to Open Source</span></h2>
@@ -181,7 +186,7 @@
 
       <!-- FOOTER -->
       <footer>
-         <p>Copyleft 2014 - AOSC &middot; Page designed by Jeff Bai, Lion Yang, Joy Neop &middot; Page powered by Bootstrap &middot; <a href="http://wenda.anthonos.org/article/2">Contact Us</a> &middot; <a href="http://wenda.anthonos.org/page/links">Friendly Links</a> &middot; <a href="http://wenda.anthonos.org/page/sponsor">Sponsors</a></p>
+         <p>Copyleft 2014 - AOSC &middot; Page designed by Jeff Bai, Lion Yang, Joy Neop &middot; Page powered by <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="http://glyphicons.com/">GLYPHICONS</a> &middot; <a href="http://wenda.anthonos.org/article/2">Contact Us</a> &middot; <a href="http://wenda.anthonos.org/page/links">Friendly Links</a> &middot; <a href="http://wenda.anthonos.org/page/sponsor">Sponsors</a></p>
          <p>2014 "安同开源" - <a href="http://www.miibeian.gov.cn/">粤ICP备14040623号</a></p>
       </footer>
 
@@ -191,20 +196,12 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-<<<<<<< HEAD
-    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!--<script type="text/javascript"><![CDATA[
-        var g_location = "/index.html";
-    //]]></script> -->
-    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery.cookie/jquery.cookie.js"></script>
-    <script type="text/javascript" src="js/lang.min.js"></script>
-=======
+
     <script src="//lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="//lib.sinaapp.com/js/jquery.cookie/jquery.cookie.js"></script>
     <script>var g_location = "/index.html";</script>
     <script src="/js/lang.min.js"></script>
->>>>>>> d7282d4fd0c11b677100a5b5897d3c67b53fba95
+
   </body>
 </html>
