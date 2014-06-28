@@ -112,7 +112,6 @@ include 'modules/langue.php';?>
             </div>
           </div>
         </div>
-      </div>
       <!-- Carousel nav -->
       <a class="carousel-control left" href="#myCarousel" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
