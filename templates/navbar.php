@@ -32,7 +32,7 @@ $nav_langues = array(
 		'l10n' => '本地化',
 		'paste' => '剪贴板',
 	),
-	'ja' => array(
+/*	'ja' => array(
 		'home' => 'ホーム',
 		'forums' => 'フォーラム',
 		'dl' => 'ダウンロード',
@@ -41,7 +41,7 @@ $nav_langues = array(
 		'wiki' => '百科事典',
 		'l10n' => 'ローカライゼーション',
 		'paste' => 'クリップボード',
-	)
+	) */
 );
 ?>
     <div class="navbar-wrapper">
@@ -77,7 +77,7 @@ $nav_langues = array(
                     <li><a href="?lang=en">English</a></li>
                     <li><a href="?lang=zh-CN">简体中文</a></li>
                     <li><a href="?lang=zh-TW">正體中文</a></li>
-                    <li><a href="?lang=ja">にほんご</a></li>
+                    <!-- <a href="?lang=ja">にほんご</a></li> -->
                   </ul>
                 </li>
               </ul>
