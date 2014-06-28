@@ -23,8 +23,8 @@ $nav_langues = array(
 		'feedback' => '反馈',
 		'repo' => '源码',
 		'wiki' => '百科',
-		'developers' => '开发'
-		'github' => 'GitHub'
+		'developers' => '开发',
+		'github' => 'GitHub',
 		'l10n' => '本地化',
 		'paste' => '剪贴板',
 	),
@@ -36,8 +36,8 @@ $nav_langues = array(
 		'feedback' => '反馈',
 		'repo' => '源码',
 		'wiki' => '百科',
-		'developers' => '开发'
-		'github' => 'GitHub'
+		'developers' => '开发',
+		'github' => 'GitHub',
 		'l10n' => '本地化',
 		'paste' => '剪贴板',
 	),
