@@ -177,7 +177,7 @@ include '/modules/langue.php';
 
     <!-- Javascripts -->
 
-    <script src="//lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
+    <script src="https://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
 
   </body>

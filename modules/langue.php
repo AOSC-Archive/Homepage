@@ -38,6 +38,6 @@ if (LANGUAGE_IN_REQUEST && !isset ($langue) && isset ($_SERVER['HTTP_ACCEPT_LANG
   }
 }
 
-if ($langue == '') $langue = ALTERNATE_LANGUAGE;
+if (!isset ($langue)) $langue = ALTERNATE_LANGUAGE;
 
 ?>
