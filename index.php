@@ -66,9 +66,7 @@ $langues = array(
     'feat-peace-p' => '在大力推进开源和自由的同时，我们不会因此对任何非自由或商业软件产生敌意，我们尊重你的选择，但我们最爱开源！',
 	) */
 );
-
-include '/modules/langue.php';
-?>
+include 'modules/langue.php';?>
 
 <!DOCTYPE html>
 <html lang=<?php echo $langue; ?>>
@@ -87,7 +85,7 @@ include '/modules/langue.php';
     <link href="/css/common.css" rel="stylesheet">
   </head>
   <body>
-  <?php include '/templates/navbar.php';?>
+  <?php include 'templates/navbar.php';?>
     <!-- Carousel
     ================================================== -->
   <div id="myCarousel" class="carousel slide" data-interval="6000" data-ride="carousel">
@@ -171,7 +169,7 @@ include '/modules/langue.php';
 
       <hr class="featurette-divider">
 
-    <?php include '/templates/footer.php';?>
+    <?php include 'templates/footer.php';?>
 
     </div><!-- /.container -->
 
