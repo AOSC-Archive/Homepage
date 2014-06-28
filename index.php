@@ -105,9 +105,10 @@ include 'modules/langue.php';?>
             <img src="/img/03.png" alt="Slide 3">
             <div class="carousel-caption">
           </div>
-		  <div class="item">
+          <div class="item">
             <img src="/img/04.png" alt="Slide 4">
             <div class="carousel-caption">
+            </div>
           </div>
         </div>
       </div>
