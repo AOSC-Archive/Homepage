@@ -49,7 +49,7 @@ $langues = array(
     'feat-peace' => '包容和友好 <span class="text-muted nowarp">不只是开源！</span>',
     'feat-peace-p' => '在大力推进开源和自由的同时，我们不会因此对任何非自由或商业软件产生敌意，我们尊重你的选择，但我们最爱开源！',
 	),
-	'ja' => array(
+/*	'ja' => array(
 		'title' => '\\\\TODO: Language',
 		'community' => '社区',
 		'community-p' => '安同开源社区主要由学生发起并主导，以包容为基本原则，社区欢迎来自全世界的贡献和参与。',
@@ -64,7 +64,7 @@ $langues = array(
     'feat-opensource-p' => '开源，给技术的进步带来了协作和分享。安同开源社区的一切项目均为开源并且允许自由分享。',
     'feat-peace' => '包容和友好 <span class="text-muted nowarp">不只是开源！</span>',
     'feat-peace-p' => '在大力推进开源和自由的同时，我们不会因此对任何非自由或商业软件产生敌意，我们尊重你的选择，但我们最爱开源！',
-	)
+	) */
 );
 
 include '/modules/langue.php';
