@@ -1,5 +1,5 @@
 <?php
-if (!isset ($__IN_FRAME__)) exit();
+if (!defined('IN_FRAME')) exit();
 
 $nav_langues = array(
 	'en' => array(

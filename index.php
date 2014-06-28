@@ -1,5 +1,5 @@
 <?php
-$__IN_FRAME__ = true;
+define('IN_FRAME', true);
 $langues = array(
 	'en' => array(
 		'title' => 'AOSC - Home',

@@ -1,5 +1,5 @@
 <?php
-if (!isset ($__IN_FRAME__)) exit();
+if (!defined('IN_FRAME')) exit();
 
 define('ALTERNATE_LANGUAGE' , 'zh-CN');
 define('LANGUAGE_IN_URL_ARG', true);
