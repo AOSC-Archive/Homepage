@@ -1,3 +1,14 @@
+<?php
+define('IN_FRAME', true_;
+$langues = array(
+  'en' => array(
+    'title' => 'AOSC - Downloads',
+  ),
+  'zh-CN' => array(
+    'title' => '安同开源社区 - 下载',
+  ),
+include 'modules/langue.php';?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,7 +19,7 @@
     <meta name="author" content="Jeff Bai <jeffbaichina@gmail.com>, YeXiaoxing <ye@xiaoxing.us>">
     <link rel="shortcut icon" href="../img/favicon.png">
 
-    <title>AOSC - Download</title>
+    <title><?php echo $langues[$langue]['title'];?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.css" rel="stylesheet">
