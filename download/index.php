@@ -55,6 +55,7 @@ $langues = array(
     'ast-ad' => 'The world of open source starts here.',
     'src-button' => 'Source Code &raquo;',
   ),
+);
 include '../modules/langue.php';?>
 
 <!DOCTYPE html>
