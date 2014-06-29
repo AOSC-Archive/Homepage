@@ -1,5 +1,5 @@
 <?php
-define('IN_FRAME', true_;
+define('IN_FRAME', true);
 $langues = array(
   'en' => array(
     'title' => 'AOSC - Downloads',
@@ -15,6 +15,7 @@ $langues = array(
     'xfce-desc' => 'A Xfce spin based on AnthonOS.',
     'cp-title' => 'CentralPoint <span class="text-muted">Radio Noise</span>',
     'cp-download' => 'Announcement and Download &raquo;',
+    'cp-ad' => '===================TODO=======================',
     'ast-title' => 'Anthon Starter <span class="text-muted">Start Me Up!',
     'ast-ad' => 'The world of open source starts here.',
     'src-button' => 'Source Code &raquo;',
@@ -32,6 +33,7 @@ $langues = array(
     'xfce-title' => 'Xfce Spin',
     'xfce-desc' => 'A Xfce spin based on AnthonOS.',
     'cp-title' => 'CentralPoint <span class="text-muted">Radio Noise</span>',
+    'cp-ad' => '===================TODO=======================',
     'cp-download' => 'Announcement and Download &raquo;',
     'ast-title' => 'Anthon Starter <span class="text-muted">Start Me Up!',
     'ast-ad' => 'The world of open source starts here.',
@@ -50,6 +52,7 @@ $langues = array(
     'xfce-title' => 'Xfce Spin',
     'xfce-desc' => 'A Xfce spin based on AnthonOS.',
     'cp-title' => 'CentralPoint <span class="text-muted">Radio Noise</span>',
+    'cp-ad' => '===================TODO=======================',
     'cp-download' => 'Announcement and Download &raquo;',
     'ast-title' => 'Anthon Starter <span class="text-muted">Start Me Up!',
     'ast-ad' => 'The world of open source starts here.',
@@ -66,13 +69,14 @@ include '../modules/langue.php';?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Jeff Bai <jeffbaichina@gmail.com>, YeXiaoxing <ye@xiaoxing.us>">
-    <link rel="shortcut icon" href="../img/favicon.png">
+    <link rel="shortcut icon" href="/img/favicon.png">
 
     <title><?php echo $langues[$langue]['title'];?></title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.css" rel="stylesheet">
-    <link href="../css/carousel.css" rel="stylesheet"> 
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/carousel.css" rel="stylesheet"> 
+    <link href="/css/common.css" rel="stylesheet"> 
   </head>
   <body>
   <!-- NAVBAR
@@ -83,7 +87,7 @@ include '../modules/langue.php';?>
     <hr class="featurette-divider">  
     <div class="row featurette">
     <div class="col-md-3">
-      <img src="../img/anos.png" height=200 width=200>
+      <img src="/img/anos.png" height=200 width=200>
     </div>
     <div class="col-md-9">
       <h2 class="heading"><?php echo $langues[$langue]['anthonos-title'];?></h2>
@@ -130,7 +134,7 @@ include '../modules/langue.php';?>
 
   <div class="row featurette">
     <div class="col-md-3">
-      <img src="../img/cp.png" height=200 width=200>
+      <img src="/img/cp.png" height=200 width=200>
     </div>
     <div class="col-md-9">
       <h2 class="heading"><?php echo $langues[$langue]['cp-title'];?></h2>
@@ -143,7 +147,7 @@ include '../modules/langue.php';?>
       
   <div class="row featurette">
     <div class="col-md-3">
-      <img src="../img/ast.png" height=200 width=200>
+      <img src="/img/ast.png" height=200 width=200>
     </div>
     <div class="col-md-9">
       <h2 class="heading"><?php echo $langues[$langue]['ast-title'];?></span></h2>
