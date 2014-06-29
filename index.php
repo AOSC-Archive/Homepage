@@ -34,7 +34,7 @@ $langues = array(
     'feat-peace-p' => '在大力推进开源和自由的同时，我们不会因此对任何非自由或商业软件产生敌意，我们尊重你的选择，但我们最爱开源！',
   ),
   'zh-TW' => array(
-    'title' => '\\\\TODO: Language',
+    'title' => '測試保存',
     'community' => '社区',
     'community-p' => '安同开源社区主要由学生发起并主导，以包容为基本原则，社区欢迎来自全世界的贡献和参与。',
     'community-b' => '社区论坛',
