@@ -3,7 +3,7 @@ if (!defined('IN_FRAME')) exit();
 ?>
 <!-- FOOTER -->
 <footer class="footer">
-  <p>Copyleft 2014 - AOSC &middot; Page designed by Jeff Bai, Lion Yang, Joy Neop, Arthur Wang &middot; Page powered by <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="http://glyphicons.com/">GLYPHICONS</a> &middot; <a href="http://wenda.anthonos.org/article/2">Contact Us</a> &middot; <a href="http://wenda.anthonos.org/page/links">Friendly Links</a> &middot; <a href="http://wenda.anthonos.org/page/sponsor">Sponsors</a></p>
+  <p>Copyleft 2014 - AOSC &middot; Page designed by Jeff Bai, Lion Yang, Joy Neop, Arthur Wang &middot; Translated by: Jeff Bai, 子虚 &middot;Page powered by <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="http://glyphicons.com/">GLYPHICONS</a> &middot; <a href="http://wenda.anthonos.org/article/2">Contact Us</a> &middot; <a href="http://wenda.anthonos.org/page/links">Friendly Links</a> &middot; <a href="http://wenda.anthonos.org/page/sponsor">Sponsors</a></p>
   
   <p>This website as seen probably won't be possible without our sponsors: UCloud and National Chi Nan University (their logos are as seen below).</p>
   
