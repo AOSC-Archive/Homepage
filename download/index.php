@@ -15,10 +15,10 @@ $langues = array(
     'xfce-desc' => 'A Xfce spin based on AnthonOS.',
     'cp-title' => 'CentralPoint <span class="text-muted">Radio Noise</span>',
     'cp-download' => 'Announcement and Download &raquo;',
-    'cp-ad' => '===================TODO=======================',
+    'cp-ad' => 'A lightweight Turn-key style server release.',
     'ast-title' => 'Anthon Starter <span class="text-muted">Start Me Up!',
-    'ast-ad' => 'The world of open source starts here.',
-    'src-button' => 'Source Code &raquo;',
+    'ast-ad' => 'Installation helper for AOSC Linux distributions.',
+    'src-button' => 'Homepage &raquo;',
   ),
   'zh-CN' => array(
     'title' => '安同开源社区 - 下载',
@@ -36,11 +36,11 @@ $langues = array(
     'cp-ad' => '轻量化的 Turn-key 型服务器发行版',
     'cp-download' => '发布及下载 &raquo;',
     'ast-title' => '安同开始程序 <span class="text-muted">Start Me Up!', //不要翻译 Start Me Up!
-    'ast-ad' => '开源世界从这里开始',
-    'src-button' => '源码 &raquo;',
+    'ast-ad' => '安同开源社区发行版硬盘安装助手',
+    'src-button' => '项目主页 &raquo;',
   ),
   'zh-TW' => array(
-    'title' => '安同開源社區',
+    'title' => '安同開源社區  -  下載',
     'download-title' => '下載 / <span class="text-muted">社區項目</span>',
     'anthonos-title' => 'AnthonOS <span class="text-muted">候選發佈</span>',
     'anthonos-ad' => '簡而不剪的桌面發行版.',
@@ -54,9 +54,9 @@ $langues = array(
     'cp-title' => 'CentralPoint <span class="text-muted">代號 "Radio Noise"</span>',
     'cp-ad' => '輕量化的 turn-key 類型的伺服器發行版.',
     'cp-download' => '發佈及下載 &raquo;',
-    'ast-title' => '安同開始 <span class="text-muted">Start Me Up!',
-    'ast-ad' => '開源世界從這裏開始.',
-    'src-button' => '源碼 &raquo;',
+    'ast-title' => '安同開始程式 <span class="text-muted">Start Me Up!',
+    'ast-ad' => '安同開源社區發行版安裝助手',
+    'src-button' => '項目主頁 &raquo;',
   ),
 );
 include '../modules/langue.php';?>
@@ -152,7 +152,7 @@ include '../modules/langue.php';?>
     <div class="col-md-9">
       <h2 class="heading"><?php echo $langues[$langue]['ast-title'];?></span></h2>
       <p class="lead"><?php echo $langues[$langue]['ast-ad'];?></p>
-      <p><a class="btn btn-default" href="https://github.com/AOSC-Dev/Anthon-Starter" role="button"><?php echo $langues[$langue]['src-button'];?></a></p>
+      <p><a class="btn btn-default" href="http://ast.projects.anthonos.org/" role="button"><?php echo $langues[$langue]['src-button'];?></a></p>
     </div>
   </div>
 
