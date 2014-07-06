@@ -95,7 +95,7 @@ $nav_langues = array(
               <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="/img/glyphicons_370_globe_af_grey.png" alt="Language">
+                    <img src="/img/glyphicons_370_globe_af_grey_normal.png" alt="Language">
                   </a>
                   <ul class="dropdown-menu">
                     <li><a href="?lang=en">English</a></li>
@@ -109,6 +109,5 @@ $nav_langues = array(
             </div>
           </div>
         </div>
-		
       </div>
     </div>

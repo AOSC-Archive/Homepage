@@ -182,6 +182,15 @@ include 'modules/langue.php';?>
 
     <script src="https://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-
+    <script>
+    $(function() { 
+      var $img = $("img"); 
+      $img.hover(function() { 
+        $(this).attr("src",$(this).attr("src").replace("_normal","_hover")); 
+      },function() { 
+        $(this).attr("src",$(this).attr("src").replace("_hover","_normal")); 
+      });
+    });
+    </script>
   </body>
 </html>
