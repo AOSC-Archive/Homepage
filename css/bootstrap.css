@@ -273,7 +273,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Myriad Pro", "Myriad Apple", "Myriad Set Pro", "Myriad Set", Myriad, "Lucida Grande", ".LucidaGrandeUI", "Open Sans", "Helvetica Neue", Helvetica, Roboto, "Sogoe UI", "Hiragino Sans GB", "Lantinghei SC", "Lantinghei TC", "Hiragino Kaku ProN", "Hiragino Kaku Pro", "Hiragino Gothic ProN", "Hiragino Gothic Pro", "Microsoft YaHei UI", STXiHei, "Heiti SC", sans-serif;
+  font-family: "Myriad Pro", "Myriad Apple", "Myriad Set Pro", "Myriad Set", Myriad, "Open Sans", "Helvetica Neue", Helvetica, "Lucida Grande", ".LucidaGrandeUI", Roboto, "Segoe UI", "Hiragino Sans GB", "Lantinghei SC", "Lantinghei TC", "Hiragino Kaku ProN", "Hiragino Kaku Pro", "Hiragino Gothic ProN", "Hiragino Gothic Pro", "Xin Gothic", "Microsoft YaHei UI", STXiHei, "Heiti SC", sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
