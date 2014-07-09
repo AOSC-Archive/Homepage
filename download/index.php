@@ -1,13 +1,31 @@
 <?php
 define('IN_FRAME', true);
+
+$anthonos_download_urls = array(
+  'en' => array(
+    'name' => 'Engilsh',
+    'url' => 'http://mirror.anthonos.org/os2-releases/anthonos/june-2014/anthonos_rc0-lycanthropy_kde_pc+mac_en-US.iso'
+    ),
+  'zh-CN' => array(
+    'name' => '简体中文',
+    'url' => 'http://mirror.anthonos.org/os2-releases/anthonos/june-2014/anthonos_rc0-lycanthropy_kde_pc+mac_zh-CN.iso'
+    ),
+  'zh-TW' => array(
+    'name' => '正體中文',
+    'url' => 'http://mirror.anthonos.org/os2-releases/anthonos/june-2014/anthonos_rc0-lycanthropy_kde_pc+mac_zh-TW.iso'
+    ),
+);
+
 $langues = array(
   'en' => array(
-    'title' => 'AOSC - Downloads',
+    'title' => 'Downloads - AOSC',
     'download-title' => 'Downloads / <span class="text-muted">Community Projects</span>',
     'anthonos-title' => 'AnthonOS <span class="text-muted">Release Candidate</span>',
     'anthonos-ad' => 'Simple, while feature rich.',
     'anthonos-relnote' => 'Release Notes &raquo;',
-    'anthonos-download' => '<a class="btn btn-default" href="http://mirror.anthonos.org/os2-releases/anthonos/june-2014/anthonos_rc0-lycanthropy_kde_pc+mac_en-US.iso" role="button">Download &raquo;</a>',
+    'anthonos-download' => 'Download English Version',
+    'anthonos-download-other' => 'Other Languages\'',
+    'anthonos-password' => 'Password of Live CD: ',
     'awesome-title' => 'Awesome Spin',
     'awesome-desc' => 'An Awesome spin (that is awesome), from Zhanlin Shang. Awesome is a highly customizable window manager.',
     'download-button' => 'Download &raquo;',
@@ -21,16 +39,18 @@ $langues = array(
     'src-button' => 'Homepage &raquo;',
   ),
   'zh-CN' => array(
-    'title' => '安同开源社区 - 下载',
+    'title' => '下载 - 安同开源社区',
     'download-title' => '下载 / <span class="text-muted">社区项目</span>',
     'anthonos-title' => 'AnthonOS <span class="text-muted">候选发布</span>',
     'anthonos-ad' => '简而不减的桌面发行版',
     'anthonos-relnote' => '发行注记 &raquo;',
-    'anthonos-download' => '<a class="btn btn-default" href="http://mirror.anthonos.org/os2-releases/anthonos/june-2014/anthonos_rc0-lycanthropy_kde_pc+mac_zh-CN.iso" role="button">下载 &raquo;</a>',
-    'awesome-title' => 'Awesome Spin',
+    'anthonos-download' => '下载简体中文版',
+    'anthonos-download-other' => '其它语言',
+    'anthonos-password' => 'Live CD 登陆密码为: ',
+    'awesome-title' => 'Awesome 版',
     'awesome-desc' => '一个非常赞的 Awesome 定制版本, 来自 Zhanlin Shang. Awesome 是一个高度可定制的窗口管理器',
     'download-button' => '下载 &raquo;',
-    'xfce-title' => 'Xfce Spin',
+    'xfce-title' => 'Xfce 版',
     'xfce-desc' => '基于 AnthonOS 制作的 Xfce Spin.',
     'cp-title' => 'CentralPoint <span class="text-muted">"缺陷电气"</span>', //此处注意使用半角引号
     'cp-ad' => '轻量化的 Turn-key 型服务器发行版',
@@ -40,16 +60,18 @@ $langues = array(
     'src-button' => '项目主页 &raquo;',
   ),
   'zh-TW' => array(
-    'title' => '安同開源社區  -  下載',
+    'title' => '下載 - 安同開源社區',
     'download-title' => '下載 / <span class="text-muted">社區項目</span>',
     'anthonos-title' => 'AnthonOS <span class="text-muted">候選發佈</span>',
     'anthonos-ad' => '簡而不剪的桌面發行版.',
     'anthonos-relnote' => '發行注記 &raquo;',
-    'anthonos-download' => '<a class="btn btn-default" href="http://mirror.anthonos.org/os2-releases/anthonos/june-2014/anthonos_rc0-lycanthropy_kde_pc+mac_zh-TW.iso" role="button">下載 &raquo;</a>',
-    'awesome-title' => 'Awesome Spin',
+    'anthonos-download' => '下載正體中文版',
+    'anthonos-download-other' => '其它語言',
+    'anthonos-password' => 'Live CD 登陸密碼為: ',
+    'awesome-title' => 'Awesome 版',
     'awesome-desc' => '一個非常贊的 Awesome 定製版本, 來自 Zhanlin Shang. Awesome 是一個可以高度定製的窗口管理器.',
     'download-button' => '下載 &raquo;',
-    'xfce-title' => 'Xfce Spin',
+    'xfce-title' => 'Xfce 版',
     'xfce-desc' => '基於 AnthonOS 製作的Xfce Spin.',
     'cp-title' => 'CentralPoint <span class="text-muted">代號 "Radio Noise"</span>',
     'cp-ad' => '輕量化的 turn-key 類型的伺服器發行版.',
@@ -82,7 +104,7 @@ include '../modules/langue.php';?>
   <!-- NAVBAR
   ================================================== -->
   <?php include '../templates/navbar.php';?>
-  <div class="container marketing"   
+  <div class="container marketing">
     <h1 class="featurette-heading"><?php echo $langues[$langue]['download-title'];?></h1>
     <hr class="featurette-divider">  
     <div class="row featurette">
@@ -91,9 +113,31 @@ include '../modules/langue.php';?>
     </div>
     <div class="col-md-9">
       <h2 class="heading"><?php echo $langues[$langue]['anthonos-title'];?></h2>
-      <p class="lead"><?php echo $langues[$langue]['anthonos-ad'];?>
-      <p><a class="btn btn-default" href="http://wenda.anthonos.org/article/13" role="button"><?php echo $langues[$langue]['anthonos-relnote'];?></a></p>
-      <p><?php echo $langues[$langue]['anthonos-download'];?></p>
+      <p class="lead">
+        <?php echo $langues[$langue]['anthonos-ad'];?>
+        <div class="btn-toolbar">
+          <a class="btn btn-default" href="http://wenda.anthonos.org/article/13" role="button"><?php echo $langues[$langue]['anthonos-relnote'];?></a><span style="margin: 5px;"></span>
+          <div class="btn-group">
+            <a class="btn btn-primary" href="<?php echo $anthonos_download_urls[$langue]['url'] ?>" role="button"><?php echo $langues[$langue]['anthonos-download'];?></a>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                <?php echo $langues[$langue]['anthonos-download-other'];?><span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+              <?php
+                foreach ($anthonos_download_urls as $anthonos_download_urls_key => $anthonos_download_urls_value){
+                  if ($anthonos_download_urls_key == $langue)
+                  echo '<li><a href="' . $anthonos_download_urls_value['url'] . '" role="button">&raquo;' . $anthonos_download_urls_value['name'] . '</a></li>';
+                  else
+                  echo '<li><a href="' . $anthonos_download_urls_value['url'] . '" role="button">' . $anthonos_download_urls_value['name'] . '</a></li>';
+                }
+              ?>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </p>
+      <h4><span class="label label-danger"><?php echo $langues[$langue]['anthonos-password'];?><em>live</em></span></h4>
     </div>
     </div>
 
@@ -169,6 +213,16 @@ include '../modules/langue.php';?>
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    
+    <script type="application/javascript">
+    $(function() { 
+      var $img = $("img"); 
+      $img.hover(function() { 
+        $(this).attr("src",$(this).attr("src").replace("_normal","_hover")); 
+      },function() { 
+        $(this).attr("src",$(this).attr("src").replace("_hover","_normal")); 
+      });
+      $
+    });
+    </script>
   </body>
 </html>

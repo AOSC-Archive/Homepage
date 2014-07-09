@@ -125,19 +125,19 @@ include 'modules/langue.php';?>
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-md-4">
           <img src="/img/aosc.png">
           <h2><?php echo $langues[$langue]['community'];?></h2>
           <p><?php echo $langues[$langue]['community-p'];?></p> 
           <p><a class="btn btn-default" href="http://wenda.anthonos.org/" role="button"><?php echo $langues[$langue]['community-b'];?> &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        <div class="col-md-4">
           <img src="/img/ast_small.png">
           <h2><?php echo $langues[$langue]['projects'];?></h2>
           <p><?php echo $langues[$langue]['projects-p'];?></p>
           <p><a class="btn btn-default" href="http://anthonos.org/download" role="button"><?php echo $langues[$langue]['projects-b'];?> &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        <div class="col-md-4">
           <img src="/img/next.png">
           <h2><?php echo $langues[$langue]['join'];?></h2>
           <p><?php echo $langues[$langue]['join-p'];?></p>
@@ -182,7 +182,7 @@ include 'modules/langue.php';?>
 
     <script src="https://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <script>
+    <script type="application/javascript">
     $(function() { 
       var $img = $("img"); 
       $img.hover(function() { 

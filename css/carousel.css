@@ -33,7 +33,12 @@ body {
 .navbar-header {
   padding-left: 150px;
 }
-
+.navbar-wrapper + div {
+  margin-top: 50px;
+}
+.navbar-nav {
+  margin-left: 0;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -108,10 +113,6 @@ body {
     padding-left: 0;
   }
 
-  /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
   .navbar-wrapper .container {
     padding-right: 15px;
     padding-left:  15px;
