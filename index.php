@@ -3,7 +3,7 @@ define('IN_FRAME', true);
 $langues = array(
   'en' => array(
     'title' => 'AOSC - Home',
-    'anthonos-getit' => 'Get It &raquo;',
+    'anthonos-getit' => 'Get It',
     'community' => 'Community',
     'community-p' => 'AOSC is an open source community founded mainly by students, with its base principle of tolerancy, the community welcomes participation and contribution from all over the world.',
     'community-b' => 'Community Forums',
@@ -20,7 +20,7 @@ $langues = array(
   ),
   'zh-CN' => array(
     'title' => '安同开源社区 - 主页',
-    'anthonos-getit' => '马上获取 &raquo;',
+    'anthonos-getit' => '马上获取',
     'community' => '社区',
     'community-p' => '安同开源社区主要由学生发起并主导，以包容为基本原则。社区欢迎来自全世界的参与和贡献。',
     'community-b' => '社区论坛',
@@ -37,7 +37,7 @@ $langues = array(
   ),
   'zh-TW' => array(
     'title' => '安同開源社區 - 主頁',
-    'anthonos-getit' => '馬上獲取 &raquo;',
+    'anthonos-getit' => '馬上獲取',
     'community' => '社區',
     'community-p' => '安同開源社區主要由學生發起並主導，以包容爲基本原則，社區歡迎來自全世界的貢獻和參與。',
     'community-b' => '社區論壇',
@@ -125,13 +125,12 @@ include 'modules/langue.php';?>
           </div>
         </div>
       <!-- Carousel nav -->
-      <!--
       <a class="carousel-control left" href="#myCarousel" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
       </a>
       <a class="carousel-control right" href="#myCarousel" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right"></span>
-      </a>-->
+      </a>
     </div>
 
     <div class="container marketing">
