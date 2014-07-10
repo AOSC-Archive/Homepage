@@ -117,8 +117,8 @@ include '../modules/langue.php';?>
     <script type="application/javascript">
       var anthonos_download_urls = new Array(
       '<?php echo $anthonos_download_urls['en']['cs'];?>', 'Download Engilsh Version', '<?php echo $anthonos_download_urls['en']['url'];?>',
-      '<?php echo $anthonos_download_urls['en']['cs'];?>', '下载简体中文版', '<?php echo $anthonos_download_urls['zh-CN']['url'];?>',
-      '<?php echo $anthonos_download_urls['en']['cs'];?>','下載正體中文版', '<?php echo $anthonos_download_urls['zh-TW']['url'];?>'
+      '<?php echo $anthonos_download_urls['zh-CN']['cs'];?>', '下载简体中文版', '<?php echo $anthonos_download_urls['zh-CN']['url'];?>',
+      '<?php echo $anthonos_download_urls['zh-TW']['cs'];?>','下載正體中文版', '<?php echo $anthonos_download_urls['zh-TW']['url'];?>'
       );
     </script>
   </head>
