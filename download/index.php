@@ -32,6 +32,7 @@ $langues = array(
     'anthonos-password' => 'Password of Live CD: ',
     'spins' => 'Spins',
     'screenshot' => 'Screenshots',
+    'close-modal' => 'Close',
     'awesome-title' => 'Awesome Spin',
     'awesome-desc' => 'An Awesome spin (that is awesome), from Zhanlin Shang. Awesome is a highly customizable window manager.',
     'download-button' => 'Download &raquo;',
@@ -56,6 +57,7 @@ $langues = array(
     'anthonos-password' => 'Live CD 登陆密码为: ',
     'spins' => '//TODO: spins',
     'screenshot' => '系统界面截图',
+    'close-modal' => '返回',
     'awesome-title' => 'Awesome 版',
     'awesome-desc' => '一个非常赞的 Awesome 定制版本, 来自 Zhanlin Shang. Awesome 是一个高度可定制的窗口管理器',
     'download-button' => '下载 &raquo;',
@@ -80,6 +82,7 @@ $langues = array(
     'anthonos-password' => 'Live CD 登陸密碼為: ',
     'spins' => '//TODO: spins',
     'screenshot' => '系統界面截屏',
+    'close-modal' => '返回',
     'awesome-title' => 'Awesome 版',
     'awesome-desc' => '一個非常贊的 Awesome 定製版本, 來自 Zhanlin Shang. Awesome 是一個可以高度定製的窗口管理器.',
     'download-button' => '下載 &raquo;',
@@ -174,7 +177,7 @@ include '../modules/langue.php';?>
           <div class="my_gallery">
             <?php
               for ($a=1;$a<=11;$a++)
-                echo '<img src="/img/screenshot/'.$a.'_small.png" alt="img'.$a.'" width=250>';
+                echo '<a target="_blank" href="/img/screenshot/'.$a.'.png"><img src="/img/screenshot/'.$a.'_small.png" id="img'.$a.'" alt="img'.$a.'" width="250"></a>';
             ?>
           </div>
         </div>
@@ -213,35 +216,13 @@ include '../modules/langue.php';?>
     <?php include '../templates/footer.php';?>
   
   </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script type="application/javascript">
-    $(document).ready(function() { 
-      var $img = $("img"); 
-      $img.hover(function() { 
-        $(this).attr("src",$(this).attr("src").replace("_normal","_hover")); 
-      },function() { 
-        $(this).attr("src",$(this).attr("src").replace("_hover","_normal")); 
-      });
-      
-      $(".download-handle").click(function(){
-        $("#download-button").html(anthonos_download_urls[parseInt(this.id.substr(3))*3+1]);
-        $("#download-button").attr("href",anthonos_download_urls[parseInt(this.id.substr(3))*3+2]);
-        $("#checksum").html(anthonos_download_urls[parseInt(this.id.substr(3))*3]);
-      });
-    });
-    </script>
+  
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only"><?php echo $langues[$langue]['close-modal'];?></span></button>
             <h3 class="modal-title" id="myModalLabel"><?php echo $langues[$langue]['spins'];?></h3>
           </div>
           <div class="modal-body">
@@ -262,10 +243,31 @@ include '../modules/langue.php';?>
             </p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><?php echo $langues[$langue]['close-modal'];?></button>
           </div>
         </div>
       </div>
     </div>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script type="application/javascript">
+    $(document).ready(function() { 
+      var $img = $("img"); 
+      $img.hover(function() { 
+        $(this).attr("src",$(this).attr("src").replace("_normal","_hover")); 
+      },function() { 
+        $(this).attr("src",$(this).attr("src").replace("_hover","_normal")); 
+      });
+      $(".download-handle").click(function(){
+        $("#download-button").html(anthonos_download_urls[parseInt(this.id.substr(3))*3+1]);
+        $("#download-button").attr("href",anthonos_download_urls[parseInt(this.id.substr(3))*3+2]);
+        $("#checksum").html(anthonos_download_urls[parseInt(this.id.substr(3))*3]);
+      });
+    });
+    </script>
   </body>
 </html>
