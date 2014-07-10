@@ -3,6 +3,7 @@ define('IN_FRAME', true);
 $langues = array(
   'en' => array(
     'title' => 'AOSC - Home',
+    'anthonos-getit' => 'Get It &raquo;',
     'community' => 'Community',
     'community-p' => 'AOSC is an open source community founded mainly by students, with its base principle of tolerancy, the community welcomes participation and contribution from all over the world.',
     'community-b' => 'Community Forums',
@@ -19,6 +20,7 @@ $langues = array(
   ),
   'zh-CN' => array(
     'title' => '安同开源社区 - 主页',
+    'anthonos-getit' => '马上获取 &raquo;',
     'community' => '社区',
     'community-p' => '安同开源社区主要由学生发起并主导，以包容为基本原则。社区欢迎来自全世界的参与和贡献。',
     'community-b' => '社区论坛',
@@ -35,6 +37,7 @@ $langues = array(
   ),
   'zh-TW' => array(
     'title' => '安同開源社區 - 主頁',
+    'anthonos-getit' => '馬上獲取 &raquo;',
     'community' => '社區',
     'community-p' => '安同開源社區主要由學生發起並主導，以包容爲基本原則，社區歡迎來自全世界的貢獻和參與。',
     'community-b' => '社區論壇',
@@ -90,10 +93,19 @@ include 'modules/langue.php';?>
     ================================================== -->
   <div id="myCarousel" class="carousel slide" data-interval="6000" data-ride="carousel">
     <!-- Carousel indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
     <div class="carousel-inner">
           <div class="active item">
-            <img src="/img/02.png" alt="Slide 1">
+            <img src="/img/Final_Banner.png" alt="Slide 1">
             <div class="carousel-caption">
+              <p>
+              <a class="btn btn-primary btn-lg" href="http://www.anthonos.org/download/" role="button"><?php echo $langues[$langue]['anthonos-getit'];?></a>
+              </p>
             </div>
           </div>
           <div class="item">
@@ -113,12 +125,13 @@ include 'modules/langue.php';?>
           </div>
         </div>
       <!-- Carousel nav -->
+      <!--
       <a class="carousel-control left" href="#myCarousel" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
       </a>
       <a class="carousel-control right" href="#myCarousel" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right"></span>
-      </a>
+      </a>-->
     </div>
 
     <div class="container marketing">
@@ -183,7 +196,7 @@ include 'modules/langue.php';?>
     <script src="https://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script type="application/javascript">
-    $(function() { 
+    $(document).ready(function() { 
       var $img = $("img"); 
       $img.hover(function() { 
         $(this).attr("src",$(this).attr("src").replace("_normal","_hover")); 

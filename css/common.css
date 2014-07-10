@@ -15,3 +15,9 @@
 .col-md-4 {
   text-align: center;
 }
+.my_gallery {
+  float: center;
+}
+.my_gallery img{
+  margin: 10px;
+}

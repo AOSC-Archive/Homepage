@@ -3,16 +3,19 @@ define('IN_FRAME', true);
 
 $anthonos_download_urls = array(
   'en' => array(
-    'name' => 'Engilsh',
-    'url' => 'http://mirror.anthonos.org/os2-releases/anthonos/june-2014/anthonos_rc0-lycanthropy_kde_pc+mac_en-US.iso'
+    'name' => 'Download Engilsh Version',
+    'url' => 'http://mb.anthonos.org/os2-releases/anthonos/july-2014/anthonos_final-doge_kde_pc+mac_en-US.iso',
+    'cs' => 'ac86675ef81f029e58318d762b25897e',
     ),
   'zh-CN' => array(
-    'name' => '简体中文',
-    'url' => 'http://mirror.anthonos.org/os2-releases/anthonos/june-2014/anthonos_rc0-lycanthropy_kde_pc+mac_zh-CN.iso'
+    'name' => '下载简体中文版',
+    'url' => 'http://mb.anthonos.org/os2-releases/anthonos/july-2014/anthonos_final-doge_kde_pc+mac_zh-CN.iso',
+    'cs' => '96b33bab563fd3cfd3a76e23cbf7ca6d',
     ),
   'zh-TW' => array(
-    'name' => '正體中文',
-    'url' => 'http://mirror.anthonos.org/os2-releases/anthonos/june-2014/anthonos_rc0-lycanthropy_kde_pc+mac_zh-TW.iso'
+    'name' => '下載正體中文版',
+    'url' => 'http://mb.anthonos.org/os2-releases/anthonos/july-2014/anthonos_final-doge_kde_pc+mac_zh-TW.iso',
+    'cs' => '3c2ec987eb0044b7493403c36f39bf78',
     ),
 );
 
@@ -25,7 +28,10 @@ $langues = array(
     'anthonos-relnote' => 'Release Notes &raquo;',
     'anthonos-download' => 'Download English Version',
     'anthonos-download-other' => 'Other Languages\'',
+    'anthonos-checksum' => 'MD5 Checksum : ',
     'anthonos-password' => 'Password of Live CD: ',
+    'spins' => 'Spins',
+    'screenshot' => 'Screenshots',
     'awesome-title' => 'Awesome Spin',
     'awesome-desc' => 'An Awesome spin (that is awesome), from Zhanlin Shang. Awesome is a highly customizable window manager.',
     'download-button' => 'Download &raquo;',
@@ -46,7 +52,10 @@ $langues = array(
     'anthonos-relnote' => '发行注记 &raquo;',
     'anthonos-download' => '下载简体中文版',
     'anthonos-download-other' => '其它语言',
+    'anthonos-checksum' => 'MD5 校验码 : ',
     'anthonos-password' => 'Live CD 登陆密码为: ',
+    'spins' => '//TODO: spins',
+    'screenshot' => '系统界面截图',
     'awesome-title' => 'Awesome 版',
     'awesome-desc' => '一个非常赞的 Awesome 定制版本, 来自 Zhanlin Shang. Awesome 是一个高度可定制的窗口管理器',
     'download-button' => '下载 &raquo;',
@@ -67,7 +76,10 @@ $langues = array(
     'anthonos-relnote' => '發行注記 &raquo;',
     'anthonos-download' => '下載正體中文版',
     'anthonos-download-other' => '其它語言',
+    'anthonos-checksum' => 'MD5 校驗碼 : ',
     'anthonos-password' => 'Live CD 登陸密碼為: ',
+    'spins' => '//TODO: spins',
+    'screenshot' => '系統界面截屏',
     'awesome-title' => 'Awesome 版',
     'awesome-desc' => '一個非常贊的 Awesome 定製版本, 來自 Zhanlin Shang. Awesome 是一個可以高度定製的窗口管理器.',
     'download-button' => '下載 &raquo;',
@@ -99,6 +111,13 @@ include '../modules/langue.php';?>
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/carousel.css" rel="stylesheet"> 
     <link href="/css/common.css" rel="stylesheet"> 
+    <script type="application/javascript">
+      var anthonos_download_urls = new Array(
+      '<?php echo $anthonos_download_urls['en']['cs'];?>', 'Download Engilsh Version', '<?php echo $anthonos_download_urls['en']['url'];?>',
+      '<?php echo $anthonos_download_urls['en']['cs'];?>', '下载简体中文版', '<?php echo $anthonos_download_urls['zh-CN']['url'];?>',
+      '<?php echo $anthonos_download_urls['en']['cs'];?>','下載正體中文版', '<?php echo $anthonos_download_urls['zh-TW']['url'];?>'
+      );
+    </script>
   </head>
   <body>
   <!-- NAVBAR
@@ -106,104 +125,92 @@ include '../modules/langue.php';?>
   <?php include '../templates/navbar.php';?>
   <div class="container marketing">
     <h1 class="featurette-heading"><?php echo $langues[$langue]['download-title'];?></h1>
-    <hr class="featurette-divider">  
+    <hr class="featurette-divider">
     <div class="row featurette">
-    <div class="col-md-3">
-      <img src="/img/anos.png" height=200 width=200>
-    </div>
-    <div class="col-md-9">
-      <h2 class="heading"><?php echo $langues[$langue]['anthonos-title'];?></h2>
-      <p class="lead">
-        <?php echo $langues[$langue]['anthonos-ad'];?>
-        <div class="btn-toolbar">
-          <a class="btn btn-default" href="http://wenda.anthonos.org/article/13" role="button"><?php echo $langues[$langue]['anthonos-relnote'];?></a><span style="margin: 5px;"></span>
-          <div class="btn-group">
-            <a class="btn btn-primary" href="<?php echo $anthonos_download_urls[$langue]['url'] ?>" role="button"><?php echo $langues[$langue]['anthonos-download'];?></a>
+      <div class="col-md-3">
+        <img src="/img/anos.png" height=200 width=200>
+      </div>
+      <div class="col-md-9">
+        <h2 class="heading"><?php echo $langues[$langue]['anthonos-title'];?></h2>
+        <p class="lead">
+          <?php echo $langues[$langue]['anthonos-ad'];?>
+          <div class="btn-toolbar">
+            <a class="btn btn-default" href="http://wenda.anthonos.org/article/13" role="button"><?php echo $langues[$langue]['anthonos-relnote'];?></a><span style="margin: 5px;"></span>
             <div class="btn-group">
-              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                <?php echo $langues[$langue]['anthonos-download-other'];?><span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-              <?php
-                foreach ($anthonos_download_urls as $anthonos_download_urls_key => $anthonos_download_urls_value){
-                  if ($anthonos_download_urls_key == $langue)
-                  echo '<li><a href="' . $anthonos_download_urls_value['url'] . '" role="button">&raquo;' . $anthonos_download_urls_value['name'] . '</a></li>';
-                  else
-                  echo '<li><a href="' . $anthonos_download_urls_value['url'] . '" role="button">' . $anthonos_download_urls_value['name'] . '</a></li>';
-                }
-              ?>
-              </ul>
+              <a id="download-button" class="btn btn-primary" href="<?php echo $anthonos_download_urls[$langue]['url'] ?>" role="button"><?php echo $langues[$langue]['anthonos-download'];?></a>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                  <?php echo $langues[$langue]['anthonos-download-other'];?><span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a herf="#" class="download-handle" id="dl-0" role="button">English</a></li>
+                  <li><a herf="#" class="download-handle" id="dl-1" role="button">简体中文</a></li>
+                  <li><a herf="#" class="download-handle" id="dl-2" role="button">正體中文</a></li>
+                </ul>
+              </div>
             </div>
           </div>
+        </p>
+        <p>
+          <span class="label label-default"><?php echo $langues[$langue]['anthonos-checksum'];?><span id="checksum"><?php echo $anthonos_download_urls[$langue]['cs'] ?></span></span>
+          <span class="label label-danger"><?php echo $langues[$langue]['anthonos-password'];?><em>live</em></span>
+        </p>
+        <button class="btn btn-default" data-toggle="modal" data-target="#myModal">
+          <?php echo $langues[$langue]['spins'];?>
+        </button>
+      </div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+            <?php echo $langues[$langue]['screenshot'];?>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse">
+        <div class="panel-body">
+          <div class="my_gallery">
+            <?php
+              for ($a=1;$a<=11;$a++)
+                echo '<img src="/img/screenshot/'.$a.'_small.png" alt="img'.$a.'" width=250>';
+            ?>
+          </div>
         </div>
-      </p>
-      <h4><span class="label label-danger"><?php echo $langues[$langue]['anthonos-password'];?><em>live</em></span></h4>
-    </div>
-    </div>
-
-    <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-          <?php echo $langues[$langue]['awesome-title'];?>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse">
-    <div class="panel-body">
-        <b><?php echo $langues[$langue]['awesome-desc'];?></b>
-        <p><a class="btn btn-default" href="http://mirror.anthonos.org/os2-releases/aosc-os2-spins/awesome/" role="button"><?php echo $langues[$langue]['download-button'];?></a></p> 
       </div>
     </div>
-    </div>
-    <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-          <?php echo $langues[$langue]['xfce-title'];?>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseFour" class="panel-collapse collapse">
-      <div class="panel-body">
-        <b><?php echo $langues[$langue]['xfce-desc'];?></b>
-        <p><a class="btn btn-default" href="http://mirror.anthonos.org/os2-releases/aosc-os2-spins/xfce/" role="button"><?php echo $langues[$langue]['download-button'];?></a></p> 
+    
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-3">
+        <img src="/img/cp.png" height=200 width=200>
+      </div>
+      <div class="col-md-9">
+        <h2 class="heading"><?php echo $langues[$langue]['cp-title'];?></h2>
+        <p class="lead"><?php echo $langues[$langue]['cp-ad'];?></p>
+        <p><a class="btn btn-default" href="http://wenda.anthonos.org/question/9" role="button"><?php echo $langues[$langue]['cp-download'];?></a></p>
       </div>
     </div>
-    </div>
-  </div>
 
-  <hr class="featurette-divider">
-
-  <div class="row featurette">
-    <div class="col-md-3">
-      <img src="/img/cp.png" height=200 width=200>
+    <hr class="featurette-divider">
+        
+    <div class="row featurette">
+      <div class="col-md-3">
+        <img src="/img/ast.png" height=200 width=200>
+      </div>
+      <div class="col-md-9">
+        <h2 class="heading"><?php echo $langues[$langue]['ast-title'];?></h2>
+        <p class="lead"><?php echo $langues[$langue]['ast-ad'];?></p>
+        <p><a class="btn btn-default" href="http://ast.projects.anthonos.org/" role="button"><?php echo $langues[$langue]['src-button'];?></a></p>
+      </div>
     </div>
-    <div class="col-md-9">
-      <h2 class="heading"><?php echo $langues[$langue]['cp-title'];?></h2>
-      <p class="lead"><?php echo $langues[$langue]['cp-ad'];?></p>
-      <p><a class="btn btn-default" href="http://wenda.anthonos.org/question/9" role="button"><?php echo $langues[$langue]['cp-download'];?></a></p>
-    </div>
-  </div>
 
-  <hr class="featurette-divider">
-      
-  <div class="row featurette">
-    <div class="col-md-3">
-      <img src="/img/ast.png" height=200 width=200>
-    </div>
-    <div class="col-md-9">
-      <h2 class="heading"><?php echo $langues[$langue]['ast-title'];?></span></h2>
-      <p class="lead"><?php echo $langues[$langue]['ast-ad'];?></p>
-      <p><a class="btn btn-default" href="http://ast.projects.anthonos.org/" role="button"><?php echo $langues[$langue]['src-button'];?></a></p>
-    </div>
-  </div>
+    <hr class="featurette-divider">
 
-  <hr class="featurette-divider">
-
-  <!-- FOOTER -->
-  <?php include '../templates/footer.php';?>
+    <!-- FOOTER -->
+    <?php include '../templates/footer.php';?>
   
   </div><!-- /.container -->
 
@@ -214,15 +221,51 @@ include '../modules/langue.php';?>
     <script src="https://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script type="application/javascript">
-    $(function() { 
+    $(document).ready(function() { 
       var $img = $("img"); 
       $img.hover(function() { 
         $(this).attr("src",$(this).attr("src").replace("_normal","_hover")); 
       },function() { 
         $(this).attr("src",$(this).attr("src").replace("_hover","_normal")); 
       });
-      $
+      
+      $(".download-handle").click(function(){
+        $("#download-button").html(anthonos_download_urls[parseInt(this.id.substr(3))*3+1]);
+        $("#download-button").attr("href",anthonos_download_urls[parseInt(this.id.substr(3))*3+2]);
+        $("#checksum").html(anthonos_download_urls[parseInt(this.id.substr(3))*3]);
+      });
     });
     </script>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h3 class="modal-title" id="myModalLabel"><?php echo $langues[$langue]['spins'];?></h3>
+          </div>
+          <div class="modal-body">
+            <h4>
+              <?php echo $langues[$langue]['awesome-title'];?>
+            </h4>
+            <p>
+                <b><?php echo $langues[$langue]['awesome-desc'];?></b>
+                <p><a class="btn btn-default" href="http://mb.anthonos.org/os2-releases/aosc-os2-spins/awesome/" role="button"><?php echo $langues[$langue]['download-button'];?></a></p> 
+            </p>
+            <hr>
+            <h4>
+              <?php echo $langues[$langue]['xfce-title'];?>
+            </h4>
+            <p>
+              <b><?php echo $langues[$langue]['xfce-desc'];?></b>
+              <p><a class="btn btn-default" href="http://mb.anthonos.org/os2-releases/aosc-os2-spins/xfce/" role="button"><?php echo $langues[$langue]['download-button'];?></a></p> 
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
