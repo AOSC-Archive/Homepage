@@ -23,7 +23,7 @@ $langues = array(
   'en' => array(
     'title' => 'Downloads - AOSC',
     'download-title' => 'Downloads / <span class="text-muted">Community Projects</span>',
-    'anthonos-title' => 'AnthonOS <span class="text-muted">Release Candidate</span>',
+    'anthonos-title' => 'AnthonOS <span class="text-muted">Final Release</span>',
     'anthonos-ad' => 'Simple, while feature rich.',
     'anthonos-relnote' => 'Release Notes &raquo;',
     'anthonos-download' => 'Download English Version',
@@ -48,7 +48,7 @@ $langues = array(
   'zh-CN' => array(
     'title' => '下载 - 安同开源社区',
     'download-title' => '下载 / <span class="text-muted">社区项目</span>',
-    'anthonos-title' => 'AnthonOS <span class="text-muted">候选发布</span>',
+    'anthonos-title' => 'AnthonOS <span class="text-muted">正式版本</span>',
     'anthonos-ad' => '简而不减的桌面发行版',
     'anthonos-relnote' => '发行注记 &raquo;',
     'anthonos-download' => '下载简体中文版',
@@ -73,7 +73,7 @@ $langues = array(
   'zh-TW' => array(
     'title' => '下載 - 安同開源社區',
     'download-title' => '下載 / <span class="text-muted">社區項目</span>',
-    'anthonos-title' => 'AnthonOS <span class="text-muted">候選發佈</span>',
+    'anthonos-title' => 'AnthonOS <span class="text-muted">正式版本</span>',
     'anthonos-ad' => '簡而不剪的桌面發行版.',
     'anthonos-relnote' => '發行注記 &raquo;',
     'anthonos-download' => '下載正體中文版',
@@ -138,7 +138,7 @@ include '../modules/langue.php';?>
         <p class="lead">
           <?php echo $langues[$langue]['anthonos-ad'];?>
           <div class="btn-toolbar">
-            <a class="btn btn-default" href="http://wenda.anthonos.org/article/13" role="button"><?php echo $langues[$langue]['anthonos-relnote'];?></a><span style="margin: 5px;"></span>
+            <a class="btn btn-default" href="http://wenda.anthonos.org/article/17" role="button"><?php echo $langues[$langue]['anthonos-relnote'];?></a><span style="margin: 5px;"></span>
             <div class="btn-group">
               <a id="download-button" class="btn btn-primary" href="<?php echo $anthonos_download_urls[$langue]['url'] ?>" role="button"><?php echo $langues[$langue]['anthonos-download'];?></a>
               <div class="btn-group">
