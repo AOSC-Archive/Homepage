@@ -21,3 +21,11 @@
 .my_gallery img{
   margin: 10px;
 }
+.my-container{
+}
+.my-col-fl{
+  float: left;
+}
+.my-col-fr{
+  float: right;
+}
