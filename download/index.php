@@ -24,6 +24,7 @@ $langues = array(
     'title' => 'Downloads - AOSC',
     'download-title' => 'Downloads / <span class="text-muted">Community Projects</span>',
     'anthonos-title' => 'AnthonOS <span class="text-muted">Final Release</span>',
+    '64bit' => '64-bit',
     'anthonos-ad' => 'Simple, while feature rich.',
     'anthonos-relnote' => 'Release Notes &raquo;',
     'anthonos-download' => 'Download English Version',
@@ -55,6 +56,7 @@ $langues = array(
     'title' => '下载 - 安同开源社区',
     'download-title' => '下载 / <span class="text-muted">社区项目</span>',
     'anthonos-title' => 'AnthonOS <span class="text-muted">正式版本</span>',
+    '64bit' => '64 位',
     'anthonos-ad' => '简而不减的桌面发行版',
     'anthonos-relnote' => '发行注记 &raquo;',
     'anthonos-download' => '下载简体中文版',
@@ -86,6 +88,7 @@ $langues = array(
     'title' => '下載 - 安同開源社區',
     'download-title' => '下載 / <span class="text-muted">社區項目</span>',
     'anthonos-title' => 'AnthonOS <span class="text-muted">正式版本</span>',
+    '64bit' => '64 位元',
     'anthonos-ad' => '簡而不剪的桌面發行版.',
     'anthonos-relnote' => '發行注記 &raquo;',
     'anthonos-download' => '下載正體中文版',
@@ -152,7 +155,7 @@ include '../modules/langue.php';?>
         <img src="/img/anos.png" height=200 width=200>
       </div>
       <div class="col-md-9">
-        <h2 class="heading"><?php echo $langues[$langue]['anthonos-title'];?></h2>
+        <h2 class="heading"><?php echo $langues[$langue]['anthonos-title'];?><span class="badge" style="margin-left: 10px;"><?php echo $langues[$langue]['64bit'];?></span></h2>
         <p class="lead">
           <?php echo $langues[$langue]['anthonos-ad'];?>
           <div class="btn-toolbar">
@@ -173,8 +176,8 @@ include '../modules/langue.php';?>
           </div>
         </p>
         <p>
-          <span class="label label-default"><?php echo $langues[$langue]['anthonos-checksum'];?><span id="checksum"><?php echo $anthonos_download_urls[$langue]['cs'] ?></span></span>
-          <span class="label label-danger"><?php echo $langues[$langue]['anthonos-password'];?><em>live</em></span>
+          <span class="label label-default" style="font-weight: normal;"><?php echo $langues[$langue]['anthonos-checksum'];?><span id="checksum"><?php echo $anthonos_download_urls[$langue]['cs'] ?></span></span>
+          <span class="label label-danger" style="font-weight: normal;"><?php echo $langues[$langue]['anthonos-password'];?><em>live</em></span>
         </p>
         <button class="btn btn-default" data-toggle="modal" data-target="#myModal">
           <?php echo $langues[$langue]['spins'];?>
