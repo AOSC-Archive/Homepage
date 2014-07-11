@@ -14,6 +14,8 @@ $nav_langues = array(
 		'github' => 'GitHub',
 		'l10n' => 'Localization',
 		'paste' => 'Pastebin',
+    
+		'warn' => '<strong>WARNING:</strong> A major flaw is discovered in the currently released ISO. So now please wait for the fixed one to be released at earliest July 11, 12:00 UTC, no later than Sunday.',
 	),
 	'zh-CN' => array(
 		'home' => '主页',
@@ -27,6 +29,8 @@ $nav_langues = array(
 		'github' => 'GitHub',
 		'l10n' => '本地化',
 		'paste' => '剪贴板',
+    
+		'warn' => '<strong>警告：</strong>当前的AnthonOS正式版本出现了一个问题，将可能导致桌面无法正常显示。请等待即将发布的修复版本，时间于北京时间7月11日八点至最晚本周日。',
 	),
 	'zh-TW' => array(
 		'home' => '主頁',
@@ -40,6 +44,8 @@ $nav_langues = array(
 		'github' => 'GitHub',
 		'l10n' => '本地化',
 		'paste' => '剪貼板',
+    
+		'warn' => '<strong>警告：</strong>當前的AnthonOS正式版本出現了一個問題，將可能導致桌面無法正常顯示。請等待即將發布的修正版，時間於北京時間7月11日八點至最晚本週日。',
 	),
 /*	'ja' => array(
 		'home' => 'ホーム',
@@ -112,3 +118,4 @@ $nav_langues = array(
         </div>
       </div>
     </div>
+    <div class="alert alert-danger" role="alert" style="position:fixed;top:0;width:100%;z-index:5;"><?php echo $nav_langues[$langue]['warn'];?></div>

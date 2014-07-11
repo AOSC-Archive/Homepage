@@ -44,6 +44,12 @@ $langues = array(
     'ast-title' => 'Anthon Starter <span class="text-muted">Start Me Up!',
     'ast-ad' => 'Installation helper for AOSC Linux distributions.',
     'src-button' => 'Homepage &raquo;',
+    
+		'warn' => '<strong>WARNING:</strong> A major flaw is discovered in the currently released ISO. So now please wait for the fixed one to be released at earliest July 11, 12:00 UTC, no later than Sunday.',
+		'warn-modal-p' => 'A major flaw is discovered in the currently released ISO. So now please wait for the fixed one to be released at earliest July 11, 12:00 UTC, no later than Sunday.',
+		'warn-modal' => 'WARNING',
+		'warn-tk' => 'Take this action',
+		'warn-wt' => 'Or wait for it',
   ),
   'zh-CN' => array(
     'title' => '下载 - 安同开源社区',
@@ -69,6 +75,12 @@ $langues = array(
     'ast-title' => '安同开始程序 <span class="text-muted">Start Me Up!', //不要翻译 Start Me Up!
     'ast-ad' => '安同开源社区发行版硬盘安装助手',
     'src-button' => '项目主页 &raquo;',
+    
+		'warn' => '<strong>警告：</strong>当前的AnthonOS正式版本出现了一个问题，将可能导致桌面无法正常显示。请等待即将发布的修复版本，时间于北京时间7月11日八点至最晚本周日。',
+		'warn-modal-p' => '当前的AnthonOS正式版本出现了一个问题，将可能导致桌面无法正常显示。请等待即将发布的修复版本，时间于北京时间7月11日八点至最晚本周日。',
+		'warn-modal' => '警告',
+		'warn-tk' => '继续下载',
+		'warn-wt' => '再等等',
   ),
   'zh-TW' => array(
     'title' => '下載 - 安同開源社區',
@@ -94,6 +106,12 @@ $langues = array(
     'ast-title' => '安同開始程式 <span class="text-muted">Start Me Up!',
     'ast-ad' => '安同開源社區發行版安裝助手',
     'src-button' => '項目主頁 &raquo;',
+    
+		'warn' => '<strong>警告：</strong>當前的AnthonOS正式版本出現了一個問題，將可能導致桌面無法正常顯示。請等待即將發布的修正版，時間於北京時間7月11日八點至最晚本週日。',
+		'warn-modal-p' => '當前的AnthonOS正式版本出現了一個問題，將可能導致桌面無法正常顯示。請等待即將發布的修正版，時間於北京時間7月11日八點至最晚本週日。',
+		'warn-modal' => '警告',
+		'warn-tk' => '繼續下載',
+		'warn-wt' => '再等等',
   ),
 );
 include '../modules/langue.php';?>
@@ -140,7 +158,7 @@ include '../modules/langue.php';?>
           <div class="btn-toolbar">
             <a class="btn btn-default" href="http://wenda.anthonos.org/article/17" role="button"><?php echo $langues[$langue]['anthonos-relnote'];?></a><span style="margin: 5px;"></span>
             <div class="btn-group">
-              <a id="download-button" class="btn btn-primary" href="<?php echo $anthonos_download_urls[$langue]['url'] ?>" role="button"><?php echo $langues[$langue]['anthonos-download'];?></a>
+              <button id="download-button" class="btn btn-primary" data-toggle="modal" data-target="#myModalW"><?php echo $langues[$langue]['anthonos-download'];?></button>
               <div class="btn-group">
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                   <?php echo $langues[$langue]['anthonos-download-other'];?><span class="caret"></span>
@@ -249,6 +267,25 @@ include '../modules/langue.php';?>
       </div>
     </div>
     
+    <!-- Modal -->
+    <div class="modal fade" id="myModalW" tabindex="-1" role="dialog" aria-labelledby="myModalWLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only"><?php echo $langues[$langue]['close-modal'];?></span></button>
+            <h3 class="modal-title" id="myModalWLabel"><?php echo $langues[$langue]['warn-modal'];?></h3>
+          </div>
+          <div class="modal-body">
+            <p class=""><?php echo $langues[$langue]['warn-modal-p'];?></p>
+          <div class="modal-footer">
+            <a id="download-a" role="button" class="btn btn-danger" href="<?php echo $anthonos_download_urls[$langue]['url']?>"><?php echo $langues[$langue]['warn-tk'];?></a>
+            <button type="button" class="btn btn-default" data-dismiss="modal"><?php echo $langues[$langue]['warn-wt'];?></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -264,7 +301,7 @@ include '../modules/langue.php';?>
       });
       $(".download-handle").click(function(){
         $("#download-button").html(anthonos_download_urls[parseInt(this.id.substr(3))*3+1]);
-        $("#download-button").attr("href",anthonos_download_urls[parseInt(this.id.substr(3))*3+2]);
+        $("#download-a").attr("href",anthonos_download_urls[parseInt(this.id.substr(3))*3+2]);
         $("#checksum").html(anthonos_download_urls[parseInt(this.id.substr(3))*3]);
       });
     });
