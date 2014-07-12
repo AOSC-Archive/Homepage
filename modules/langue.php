@@ -10,7 +10,7 @@ if (LANGUAGE_IN_URL_ARG && !isset ($langue) && isset ($_GET['lang'])) {
   $langue_tester = htmlspecialchars($_GET['lang'],ENT_QUOTES);
   if (array_key_exists($langue_tester, $langues)) {
     $langue = $langue_tester;
-    setcookie('langue', $langue, time()+3600*24*30, '/', '.anthonos.org');
+    setcookie('langue', $langue, time()+3600*24*30, '/', 'anthonos.org');
   }
 }
 if (LANGUAGE_IN_COOKIE && !isset ($langue) && isset ($_COOKIE['langue'])) {
