@@ -118,4 +118,3 @@ $nav_langues = array(
         </div>
       </div>
     </div>
-    <div class="alert alert-danger" role="alert" style="position:fixed;top:0;width:100%;z-index:5;"><?php echo $nav_langues[$langue]['warn'];?></div>

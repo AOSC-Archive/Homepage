@@ -161,7 +161,7 @@ include '../modules/langue.php';?>
           <div class="btn-toolbar">
             <a class="btn btn-default" href="http://wenda.anthonos.org/article/17" role="button"><?php echo $langues[$langue]['anthonos-relnote'];?></a><span style="margin: 5px;"></span>
             <div class="btn-group">
-              <button id="download-button" class="btn btn-primary" data-toggle="modal" data-target="#myModalW"><?php echo $langues[$langue]['anthonos-download'];?></button>
+              <a class="btn btn-primary download-button download-a" role="button" href="<?php echo $anthonos_download_urls[$langue]['url']?>"><?php echo $langues[$langue]['anthonos-download'];?></a>
               <div class="btn-group">
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                   <?php echo $langues[$langue]['anthonos-download-other'];?><span class="caret"></span>
@@ -269,7 +269,7 @@ include '../modules/langue.php';?>
         </div>
       </div>
     </div>
-    
+    <?php /*
     <!-- Modal -->
     <div class="modal fade" id="myModalW" tabindex="-1" role="dialog" aria-labelledby="myModalWLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -281,13 +281,14 @@ include '../modules/langue.php';?>
           <div class="modal-body">
             <p class=""><?php echo $langues[$langue]['warn-modal-p'];?></p>
           <div class="modal-footer">
-            <a id="download-a" role="button" class="btn btn-danger" href="<?php echo $anthonos_download_urls[$langue]['url']?>"><?php echo $langues[$langue]['warn-tk'];?></a>
+            <a role="button" class="btn btn-danger download-a" href="<?php echo $anthonos_download_urls[$langue]['url']?>"><?php echo $langues[$langue]['warn-tk'];?></a>
             <button type="button" class="btn btn-default" data-dismiss="modal"><?php echo $langues[$langue]['warn-wt'];?></button>
           </div>
         </div>
       </div>
     </div>
-    
+    */
+    ?>
     
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -303,8 +304,8 @@ include '../modules/langue.php';?>
         $(this).attr("src",$(this).attr("src").replace("_hover","_normal")); 
       });
       $(".download-handle").click(function(){
-        $("#download-button").html(anthonos_download_urls[parseInt(this.id.substr(3))*3+1]);
-        $("#download-a").attr("href",anthonos_download_urls[parseInt(this.id.substr(3))*3+2]);
+        $(".download-button").html(anthonos_download_urls[parseInt(this.id.substr(3))*3+1]);
+        $(".download-a").attr("href",anthonos_download_urls[parseInt(this.id.substr(3))*3+2]);
         $("#checksum").html(anthonos_download_urls[parseInt(this.id.substr(3))*3]);
       });
     });
