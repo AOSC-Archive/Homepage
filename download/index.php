@@ -3,19 +3,22 @@ define('IN_FRAME', true);
 
 $anthonos_download_urls = array(
   'en' => array(
-    'name' => 'Download Engilsh Version',
-    'url' => 'http://mb.anthonos.org/os2-releases/anthonos/july-2014/anthonos_final-doge_kde_pc+mac_en-US.iso',
-    'cs' => 'ac86675ef81f029e58318d762b25897e',
+    'url' => 'http://mb.anthonos.org/os2-releases/anthonos/july-2014/patch-1/anthonos_final-doge_kde_pc%2bmac_en-US_patch-1.iso',
+    'url-tr' => 'http://mb.anthonos.org/os2-releases/anthonos/july-2014/patch-1/anthonos_final-doge_kde_pc%2bmac_en-US_patch-1.iso.torrent',
+    'url-ml' => 'magnet:?xt=urn:btih:12728A172CC4EBB26AFBE7CA982731EBA1363F4F&dn=anthonos_final-doge_kde_pc%2bmac_en-US_patch-1.iso',
+    'cs' => 'c94c6612ced99764e94aaaf6d93f4b7b',
     ),
   'zh-CN' => array(
-    'name' => '下载简体中文版',
-    'url' => 'http://mb.anthonos.org/os2-releases/anthonos/july-2014/anthonos_final-doge_kde_pc+mac_zh-CN.iso',
-    'cs' => '96b33bab563fd3cfd3a76e23cbf7ca6d',
+    'url' => 'http://mb.anthonos.org/os2-releases/anthonos/july-2014/patch-1/anthonos_final-doge_kde_pc%2bmac_zh-CN_patch-1.iso',
+    'url-tr' => 'http://mb.anthonos.org/os2-releases/anthonos/july-2014/patch-1/anthonos_final-doge_kde_pc%2bmac_zh-CN_patch-1.iso.torrent',
+    'url-ml' => 'magnet:?xt=urn:btih:A53100967E99A68A24FC52756EA32F7E1EC367B2&dn=anthonos_final-doge_kde_pc%2bmac_zh-CN_patch-1.iso',
+    'cs' => 'b061230a3fdae3fd7aa23c15ec18964e',
     ),
   'zh-TW' => array(
-    'name' => '下載正體中文版',
-    'url' => 'http://mb.anthonos.org/os2-releases/anthonos/july-2014/anthonos_final-doge_kde_pc+mac_zh-TW.iso',
-    'cs' => '3c2ec987eb0044b7493403c36f39bf78',
+    'url' => 'http://mb.anthonos.org/os2-releases/anthonos/july-2014/patch-1/anthonos_final-doge_kde_pc%2bmac_zh-TW_patch-1.iso',
+    'url-tr' => 'http://mb.anthonos.org/os2-releases/anthonos/july-2014/patch-1/anthonos_final-doge_kde_pc%2bmac_zh-TW_patch-1.iso.torrent',
+    'url-ml' => 'magnet:?xt=urn:btih:040D1E626C1051A97AA257BC46E319EEAB8A1F26&dn=anthonos_final-doge_kde_pc%2bmac_zh-TW_patch-1.iso',
+    'cs' => '33d967e042e32838f7558f013a9ff6ab',
     ),
 );
 
@@ -28,6 +31,9 @@ $langues = array(
     'anthonos-ad' => 'Simple, while feature rich.',
     'anthonos-relnote' => 'Release Notes &raquo;',
     'anthonos-download' => 'Download English Version',
+    'anthonos-download-directly' => 'HTTP Direct Download',
+    'anthonos-download-magnetlink' => 'via Magnet link',
+    'anthonos-download-torrent' => 'via Torrent',
     'anthonos-download-other' => 'Other Languages\'',
     'anthonos-checksum' => 'MD5 Checksum : ',
     'anthonos-password' => 'Password of Live CD: ',
@@ -60,6 +66,9 @@ $langues = array(
     'anthonos-ad' => '简而不减的桌面发行版',
     'anthonos-relnote' => '发行注记 &raquo;',
     'anthonos-download' => '下载简体中文版',
+    'anthonos-download-directly' => '直接下载',
+    'anthonos-download-magnetlink' => '磁力链接',
+    'anthonos-download-torrent' => 'BitTorrent 种子',
     'anthonos-download-other' => '其它语言',
     'anthonos-checksum' => 'MD5 校验码 : ',
     'anthonos-password' => 'Live CD 登陆密码为: ',
@@ -92,6 +101,9 @@ $langues = array(
     'anthonos-ad' => '簡而不剪的桌面發行版.',
     'anthonos-relnote' => '發行注記 &raquo;',
     'anthonos-download' => '下載正體中文版',
+    'anthonos-download-directly' => '直接下載',
+    'anthonos-download-magnetlink' => '磁力鏈接',
+    'anthonos-download-torrent' => 'BitTorrent 种子',
     'anthonos-download-other' => '其它語言',
     'anthonos-checksum' => 'MD5 校驗碼 : ',
     'anthonos-password' => 'Live CD 登陸密碼為: ',
@@ -137,9 +149,20 @@ include '../modules/langue.php';?>
     <link href="/css/common.css" rel="stylesheet"> 
     <script type="application/javascript">
       var anthonos_download_urls = new Array(
-      '<?php echo $anthonos_download_urls['en']['cs'];?>', 'Download Engilsh Version', '<?php echo $anthonos_download_urls['en']['url'];?>',
-      '<?php echo $anthonos_download_urls['zh-CN']['cs'];?>', '下载简体中文版', '<?php echo $anthonos_download_urls['zh-CN']['url'];?>',
-      '<?php echo $anthonos_download_urls['zh-TW']['cs'];?>','下載正體中文版', '<?php echo $anthonos_download_urls['zh-TW']['url'];?>'
+      '<?php echo $anthonos_download_urls['en']['cs'];?>', '<?php echo $langues['en']['anthonos-download'];?>', 
+      '<?php echo $anthonos_download_urls['en']['url'];?>', '<?php echo $langues['en']['anthonos-download-directly'];?>', 
+      '<?php echo $langues['en']['anthonos-download-torrent'];?>', '<?php echo $anthonos_download_urls['en']['url-tr'];?>', 
+      '<?php echo $langues['en']['anthonos-download-magnetlink'];?>', '<?php echo $anthonos_download_urls['en']['url-ml'];?>', 
+      
+      '<?php echo $anthonos_download_urls['zh-CN']['cs'];?>', '<?php echo $langues['zh-CN']['anthonos-download'];?>', 
+      '<?php echo $anthonos_download_urls['zh-CN']['url'];?>', '<?php echo $langues['zh-CN']['anthonos-download-directly'];?>', 
+      '<?php echo $langues['zh-CN']['anthonos-download-torrent'];?>', '<?php echo $anthonos_download_urls['zh-CN']['url-tr'];?>', 
+      '<?php echo $langues['zh-CN']['anthonos-download-magnetlink'];?>', '<?php echo $anthonos_download_urls['zh-CN']['url-ml'];?>', 
+      
+      '<?php echo $anthonos_download_urls['zh-TW']['cs'];?>','<?php echo $langues['zh-TW']['anthonos-download'];?>', 
+      '<?php echo $anthonos_download_urls['zh-TW']['url'];?>', '<?php echo $langues['zh-TW']['anthonos-download-directly'];?>', 
+      '<?php echo $langues['zh-TW']['anthonos-download-torrent'];?>', '<?php echo $anthonos_download_urls['zh-TW']['url-tr'];?>', 
+      '<?php echo $langues['zh-TW']['anthonos-download-magnetlink'];?>', '<?php echo $anthonos_download_urls['zh-TW']['url-ml'];?>'
       );
     </script>
   </head>
@@ -161,15 +184,25 @@ include '../modules/langue.php';?>
           <div class="btn-toolbar">
             <a class="btn btn-default" href="http://wenda.anthonos.org/article/17" role="button"><?php echo $langues[$langue]['anthonos-relnote'];?></a><span style="margin: 5px;"></span>
             <div class="btn-group">
-              <a class="btn btn-primary download-button download-a" role="button" href="<?php echo $anthonos_download_urls[$langue]['url']?>"><?php echo $langues[$langue]['anthonos-download'];?></a>
+              
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle download-button" data-toggle="dropdown">
+                  <?php echo $langues[$langue]['anthonos-download'];?></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a class="download-a-ml" role="button" href="<?php echo $anthonos_download_urls[$langue]['url-ml']?>"><?php echo $langues[$langue]['anthonos-download-magnetlink'];?></a></li>
+                  <li><a class="download-a-tr" role="button" href="<?php echo $anthonos_download_urls[$langue]['url-tr']?>"><?php echo $langues[$langue]['anthonos-download-torrent'];?></a></li>
+                  <li><a class="download-a" role="button" href="<?php echo $anthonos_download_urls[$langue]['url']?>"><?php echo $langues[$langue]['anthonos-download-directly'];?></a></li>
+                </ul>
+              </div>
               <div class="btn-group">
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                   <?php echo $langues[$langue]['anthonos-download-other'];?><span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a herf="#" class="download-handle" id="dl-0" role="button">English</a></li>
-                  <li><a herf="#" class="download-handle" id="dl-1" role="button">简体中文</a></li>
-                  <li><a herf="#" class="download-handle" id="dl-2" role="button">正體中文</a></li>
+                  <li><a herf="#" class="download-handle" id="dl-0">English</a></li>
+                  <li><a herf="#" class="download-handle" id="dl-1" >简体中文</a></li>
+                  <li><a herf="#" class="download-handle" id="dl-2">正體中文</a></li>
                 </ul>
               </div>
             </div>
@@ -299,14 +332,20 @@ include '../modules/langue.php';?>
     $(document).ready(function() { 
       var $img = $("img"); 
       $img.hover(function() { 
-        $(this).attr("src",$(this).attr("src").replace("_normal","_hover")); 
+        $(this).attr("src",$(this).attr("src").replace("_normal", "_hover")); 
       },function() { 
-        $(this).attr("src",$(this).attr("src").replace("_hover","_normal")); 
+        $(this).attr("src",$(this).attr("src").replace("_hover", "_normal")); 
       });
       $(".download-handle").click(function(){
-        $(".download-button").html(anthonos_download_urls[parseInt(this.id.substr(3))*3+1]);
-        $(".download-a").attr("href",anthonos_download_urls[parseInt(this.id.substr(3))*3+2]);
-        $("#checksum").html(anthonos_download_urls[parseInt(this.id.substr(3))*3]);
+        var arr_index = parseInt(this.id.substr(3)) * 8;
+        $(".download-button").html(anthonos_download_urls[arr_index + 1]);
+        $(".download-a").attr("href",anthonos_download_urls[arr_index + 2]);
+        $(".download-a").html(anthonos_download_urls[arr_index + 3]);
+        $(".download-a-tr").attr("href",anthonos_download_urls[arr_index + 5]);
+        $(".download-a-tr").html(anthonos_download_urls[arr_index + 4]);
+        $(".download-a-ml").attr("href",anthonos_download_urls[arr_index + 7]);
+        $(".download-a-ml").html(anthonos_download_urls[arr_index + 6]);
+        $("#checksum").html(anthonos_download_urls[arr_index + 0]);
       });
     });
     </script>
