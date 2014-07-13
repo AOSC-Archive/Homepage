@@ -26,7 +26,7 @@ $langues = array(
   'en' => array(
     'title' => 'Downloads - AOSC',
     'download-title' => 'Downloads / <span class="text-muted">Community Projects</span>',
-    'anthonos-title' => 'AnthonOS <span class="text-muted">Final Release</span>',
+    'anthonos-title' => 'AnthonOS <span class="text-muted">Final Release - Patch 1</span>',
     '64bit' => '64-bit',
     'anthonos-ad' => 'Simple, while feature rich.',
     'anthonos-relnote' => 'Release Notes &raquo;',
@@ -66,7 +66,7 @@ $langues = array(
   'zh-CN' => array(
     'title' => '下载 - 安同开源社区',
     'download-title' => '下载 / <span class="text-muted">社区项目</span>',
-    'anthonos-title' => 'AnthonOS <span class="text-muted">正式版本</span>',
+    'anthonos-title' => 'AnthonOS <span class="text-muted">正式版本 - Patch 1</span>',
     '64bit' => '64 位',
     'anthonos-ad' => '简而不减的桌面发行版',
     'anthonos-relnote' => '发行注记 &raquo;',
@@ -106,7 +106,7 @@ $langues = array(
   'zh-TW' => array(
     'title' => '下載 - 安同開源社區',
     'download-title' => '下載 / <span class="text-muted">社區項目</span>',
-    'anthonos-title' => 'AnthonOS <span class="text-muted">正式版本</span>',
+    'anthonos-title' => 'AnthonOS <span class="text-muted">正式版本 - Patch 1</span>',
     '64bit' => '64 位元',
     'anthonos-ad' => '簡而不剪的桌面發行版.',
     'anthonos-relnote' => '發行注記 &raquo;',
