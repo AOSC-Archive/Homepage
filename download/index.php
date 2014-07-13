@@ -38,6 +38,11 @@ $langues = array(
     'anthonos-checksum' => 'MD5 Checksum : ',
     'anthonos-password' => 'Password of Live CD: ',
     'spins' => 'Spins',
+    
+    'changelog' => 'Changelog',
+    'changelog-patch1' => 'version AnthonOS "Doge" - Patch 1',
+    'changelog-patch1-p' => '<ol><li>Fixed the issue that the installer cannot skip GRUB installation.</li><li>Fixed format failure when choosing xfs, btrfs or jfs when a file system already exists on the specific partition.</li></ol>',
+    
     'screenshot' => 'Screenshots',
     'close-modal' => 'Close',
     'awesome-title' => 'Awesome Spin',
@@ -51,12 +56,12 @@ $langues = array(
     'ast-title' => 'Anthon Starter <span class="text-muted">Start Me Up!',
     'ast-ad' => 'Installation helper for AOSC Linux distributions.',
     'src-button' => 'Homepage &raquo;',
-    
+    /*
 		'warn' => '<strong>WARNING:</strong> A major flaw is discovered in the currently released ISO. So now please wait for the fixed one to be released at earliest July 11, 12:00 UTC, no later than Sunday.',
 		'warn-modal-p' => 'A major flaw is discovered in the currently released ISO. So now please wait for the fixed one to be released at earliest July 11, 12:00 UTC, no later than Sunday.',
 		'warn-modal' => 'WARNING',
 		'warn-tk' => 'Take this action',
-		'warn-wt' => 'Or wait for it',
+		'warn-wt' => 'Or wait for it',*/
   ),
   'zh-CN' => array(
     'title' => '下载 - 安同开源社区',
@@ -72,7 +77,12 @@ $langues = array(
     'anthonos-download-other' => '其它语言',
     'anthonos-checksum' => 'MD5 校验码 : ',
     'anthonos-password' => 'Live CD 登陆密码为: ',
-    'spins' => '//TODO: spins',
+    'spins' => '//TODO: Spins',
+    
+    'changelog' => '更改日志',
+    'changelog-patch1' => 'AnthonOS "Doge" - Patch 1',
+    'changelog-patch1-p' => '<ol><li>修复安装时无法跳过 GRUB 的问题。</li><li>修复当选择 xfs 、jfs 或 btrfs 文件系统时格式化失败的问题。</li></ol>',
+    
     'screenshot' => '系统界面截图',
     'close-modal' => '返回',
     'awesome-title' => 'Awesome 版',
@@ -86,12 +96,12 @@ $langues = array(
     'ast-title' => '安同开始程序 <span class="text-muted">Start Me Up!', //不要翻译 Start Me Up!
     'ast-ad' => '安同开源社区发行版硬盘安装助手',
     'src-button' => '项目主页 &raquo;',
-    
+    /*
 		'warn' => '<strong>警告：</strong>当前的AnthonOS正式版本出现了一个问题，将可能导致桌面无法正常显示。请等待即将发布的修复版本，时间于北京时间7月11日八点至最晚本周日。',
 		'warn-modal-p' => '当前的AnthonOS正式版本出现了一个问题，将可能导致桌面无法正常显示。请等待即将发布的修复版本，时间于北京时间7月11日八点至最晚本周日。',
 		'warn-modal' => '警告',
 		'warn-tk' => '继续下载',
-		'warn-wt' => '再等等',
+		'warn-wt' => '再等等',*/
   ),
   'zh-TW' => array(
     'title' => '下載 - 安同開源社區',
@@ -107,7 +117,12 @@ $langues = array(
     'anthonos-download-other' => '其它語言',
     'anthonos-checksum' => 'MD5 校驗碼 : ',
     'anthonos-password' => 'Live CD 登陸密碼為: ',
-    'spins' => '//TODO: spins',
+    'spins' => '//TODO: Spins',
+    
+    'changelog' => '更改日誌',
+    'changelog-patch1' => 'AnthonOS "Doge" - Patch 1',
+    'changelog-patch1-p' => '<ol><li>修復安裝時無法跳過 GRUB 的問題。</li><li>修復當選擇 xfs 、jfs 或 btrfs 檔案系統時格式化失敗的問題。</li></ol>',
+    
     'screenshot' => '系統界面截屏',
     'close-modal' => '返回',
     'awesome-title' => 'Awesome 版',
@@ -121,12 +136,12 @@ $langues = array(
     'ast-title' => '安同開始程式 <span class="text-muted">Start Me Up!',
     'ast-ad' => '安同開源社區發行版安裝助手',
     'src-button' => '項目主頁 &raquo;',
-    
+    /*
 		'warn' => '<strong>警告：</strong>當前的AnthonOS正式版本出現了一個問題，將可能導致桌面無法正常顯示。請等待即將發布的修正版，時間於北京時間7月11日八點至最晚本週日。',
 		'warn-modal-p' => '當前的AnthonOS正式版本出現了一個問題，將可能導致桌面無法正常顯示。請等待即將發布的修正版，時間於北京時間7月11日八點至最晚本週日。',
 		'warn-modal' => '警告',
 		'warn-tk' => '繼續下載',
-		'warn-wt' => '再等等',
+		'warn-wt' => '再等等',*/
   ),
 );
 include '../modules/langue.php';?>
@@ -212,9 +227,14 @@ include '../modules/langue.php';?>
           <span class="label label-default" style="font-weight: normal;"><?php echo $langues[$langue]['anthonos-checksum'];?><span id="checksum"><?php echo $anthonos_download_urls[$langue]['cs'] ?></span></span>
           <span class="label label-danger" style="font-weight: normal;"><?php echo $langues[$langue]['anthonos-password'];?><em>live</em></span>
         </p>
-        <button class="btn btn-default" data-toggle="modal" data-target="#myModal">
-          <?php echo $langues[$langue]['spins'];?>
-        </button>
+        <p>
+          <button class="btn btn-default" data-toggle="modal" data-target="#myModal">
+            <?php echo $langues[$langue]['spins'];?>
+          </button>
+          <button class="btn btn-default" data-toggle="modal" data-target="#myModalChangelog">
+            <?php echo $langues[$langue]['changelog'];?>
+          </button>
+        </p>
       </div>
     </div>
     
@@ -294,6 +314,28 @@ include '../modules/langue.php';?>
             <p>
               <b><?php echo $langues[$langue]['xfce-desc'];?></b>
               <p><a class="btn btn-default" href="http://mb.anthonos.org/os2-releases/aosc-os2-spins/xfce/" role="button"><?php echo $langues[$langue]['download-button'];?></a></p> 
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><?php echo $langues[$langue]['close-modal'];?></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModalChangelog" tabindex="-1" role="dialog" aria-labelledby="myModalChangelogLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only"><?php echo $langues[$langue]['close-modal'];?></span></button>
+            <h3 class="modal-title" id="myModalChangelogLabel"><?php echo $langues[$langue]['changelog'];?></h3>
+          </div>
+          <div class="modal-body">
+            <h4>
+              <?php echo $langues[$langue]['changelog-patch1'];?>
+            </h4>
+            <p>
+                <?php echo $langues[$langue]['changelog-patch1-p'];?>
             </p>
           </div>
           <div class="modal-footer">
