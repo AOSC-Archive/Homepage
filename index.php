@@ -101,7 +101,7 @@ include 'modules/langue.php';?>
     </ol>
     <div class="carousel-inner">
           <div class="active item">
-            <img src="/img/Final_Banner.png" alt="Slide 1">
+            <img src="https://dn-anthon-wenda.qbox.me/uploads/questions/20140718/8754a04b74b44f7408fb0911ad403991.png" alt="Slide 1">
             <div class="carousel-caption">
               <p>
               <a class="btn btn-primary btn-lg" href="http://www.anthonos.org/download/" role="button"><?php echo $langues[$langue]['anthonos-getit'];?></a>
@@ -109,17 +109,17 @@ include 'modules/langue.php';?>
             </div>
           </div>
           <div class="item">
-            <img src="/img/01.png" alt="Slide 2">
+            <img src="https://dn-anthon-wenda.qbox.me/uploads/questions/20140718/8a2f1c83a2205930884818dbb612c0d4.png" alt="Slide 2">
             <div class="carousel-caption">
             </div>
           </div>
           <div class="item">
-            <img src="/img/03.png" alt="Slide 3">
+            <img src="https://dn-anthon-wenda.qbox.me/uploads/questions/20140718/fba0ece2f3ee0388f2afa1c2cb56f57f.png" alt="Slide 3">
             <div class="carousel-caption">
             </div>
           </div>
           <div class="item">
-            <img src="/img/04.png" alt="Slide 4">
+            <img src="https://dn-anthon-wenda.qbox.me/uploads/questions/20140718/89fb86f920a5e255be8a2926983780ee.png" alt="Slide 4">
             <div class="carousel-caption">
             </div>
           </div>
@@ -161,7 +161,7 @@ include 'modules/langue.php';?>
         </div>
         <div class="col-md-5">   
         
-        <img style="float: right;" src="/img/Tux.png" height=350 width=350>
+        <img style="float: right;" src="https://dn-anthon-wenda.qbox.me/uploads/questions/20140718/baf7fad17283f4bd920bad0169e82ee4.png" height=350 width=350>
         </div>
       </div>
 
@@ -169,7 +169,7 @@ include 'modules/langue.php';?>
 
       <div class="row featurette">
         <div class="col-md-5">
-          <img src="/img/peace.png" height=350 width=350>
+          <img src="https://dn-anthon-wenda.qbox.me/uploads/questions/20140718/6b3d636e55df47e0ed4d66a55eb1c908.png" height=350 width=350>
         </div>
         <div class="col-md-7">
           <h2 class="featurette-heading"><?php echo $langues[$langue]['feat-peace'];?></h2>
