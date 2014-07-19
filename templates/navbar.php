@@ -73,16 +73,16 @@ $nav_langues = array(
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li><a href="http://www.anthonos.org/" ><?php echo $nav_langues[$langue]['home'];?></a></li>
-                <li><a href="http://www.anthonos.org/download/"><?php echo $nav_langues[$langue]['dl'];?></a></li>
+                <li><a href="https://www.anthonos.org/" ><?php echo $nav_langues[$langue]['home'];?></a></li>
+                <li><a href="https://www.anthonos.org/download/"><?php echo $nav_langues[$langue]['dl'];?></a></li>
                 <ul class="nav navbar-nav">
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $nav_langues[$langue]['community'];?><span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="http://wenda.anthonos.org/"><?php echo $nav_langues[$langue]['forums'];?></a></li>
-                      <li><a href="http://bugs.anthonos.org/"><?php echo $nav_langues[$langue]['feedback'];?></a></li>
+                      <li><a href="https://wenda.anthonos.org/"><?php echo $nav_langues[$langue]['forums'];?></a></li>
+                      <li><a href="https://bugs.anthonos.org/"><?php echo $nav_langues[$langue]['feedback'];?></a></li>
                       <li><a href="http://repo.anthonos.org/"><?php echo $nav_langues[$langue]['repo'];?></a></li>
-                      <li><a href="http://wiki.anthonos.org/"><?php echo $nav_langues[$langue]['wiki'];?></a></li>
+                      <li><a href="https://wiki.anthonos.org/"><?php echo $nav_langues[$langue]['wiki'];?></a></li>
                     </ul>
                   </li>
                 </ul>
@@ -90,9 +90,9 @@ $nav_langues = array(
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $nav_langues[$langue]['developers'];?><span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                       <li><a href="http://github.com/AOSC-Dev/"><?php echo $nav_langues[$langue]['github'];?></a></li>
+                       <li><a href="https://github.com/AOSC-Dev/"><?php echo $nav_langues[$langue]['github'];?></a></li>
                        <li><a href="http://l10n.anthonos.org/"><?php echo $nav_langues[$langue]['l10n'];?></a></li>
-                       <li><a href="http://pastebin.anthonos.org/"><?php echo $nav_langues[$langue]['paste'];?></a></li>
+                       <li><a href="https://pastebin.anthonos.org/"><?php echo $nav_langues[$langue]['paste'];?></a></li>
                     </ul>
                   </li>
                 </ul>
