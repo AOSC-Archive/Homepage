@@ -82,10 +82,10 @@ include 'modules/langue.php';?>
     <title><?php echo $langues[$langue]['title'];?></title>
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.css" rel="stylesheet">
-    <link href="/css/carousel.css" rel="stylesheet">
     <link href="/css/common.css" rel="stylesheet">
   </head>
   <body>
+    <div class="cover"></div>
     <div class="page pg-red">
     asdasdas
     </div>
@@ -95,9 +95,17 @@ include 'modules/langue.php';?>
     <script src="https://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script>
-      $(document).ready(function(){
-      $(".page").height(window.clientHeight);
-      });
+      $(document).ready(function(){$(".page").height(window.innerHeight);$(".cover").remove();});
+      $(window).resize(function(){$(".page").height(window.innerHeight);});
+
+window.onscroll=function(e){
+	if ( e && e.preventDefault){
+		e.preventDefault();
+	}else{
+		window.event.returnValue = false; 
+		return false;
+	}
+}
     </script>
   </body>
 </html>
