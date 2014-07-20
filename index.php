@@ -79,123 +79,25 @@ include 'modules/langue.php';?>
     <meta name="description" content="">
     <meta name="author" content="Jeff Bai <jeffbaichina@gmail.com>, Lion Yang <ionxlion@foxmail.com>, YeXiaoxing <ye@xiaoxing.us>">
     <link rel="shortcut icon" href="/img/favicon.png">
-
     <title><?php echo $langues[$langue]['title'];?></title>
-
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/carousel.css" rel="stylesheet">
     <link href="/css/common.css" rel="stylesheet">
   </head>
   <body>
-  <?php include 'templates/navbar.php';?>
-    <!-- Carousel
-    ================================================== -->
-  <div id="myCarousel" class="carousel slide" data-interval="6000" data-ride="carousel">
-    <!-- Carousel indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner">
-          <div class="active item">
-            <img src="https://dn-anthon-wenda.qbox.me/uploads/questions/20140718/8754a04b74b44f7408fb0911ad403991.png" alt="Slide 1">
-            <div class="carousel-caption">
-              <p>
-              <a class="btn btn-primary btn-lg" href="http://www.anthonos.org/download/" role="button"><?php echo $langues[$langue]['anthonos-getit'];?></a>
-              </p>
-            </div>
-          </div>
-          <div class="item">
-            <img src="https://dn-anthon-wenda.qbox.me/uploads/questions/20140718/8a2f1c83a2205930884818dbb612c0d4.png" alt="Slide 2">
-            <div class="carousel-caption">
-            </div>
-          </div>
-          <div class="item">
-            <img src="https://dn-anthon-wenda.qbox.me/uploads/questions/20140718/fba0ece2f3ee0388f2afa1c2cb56f57f.png" alt="Slide 3">
-            <div class="carousel-caption">
-            </div>
-          </div>
-          <div class="item">
-            <img src="https://dn-anthon-wenda.qbox.me/uploads/questions/20140718/89fb86f920a5e255be8a2926983780ee.png" alt="Slide 4">
-            <div class="carousel-caption">
-            </div>
-          </div>
-        </div>
+    <div class="page pg-red">
+    asdasdas
     </div>
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-md-4">
-          <img src="/img/aosc.png">
-          <h2><?php echo $langues[$langue]['community'];?></h2>
-          <p><?php echo $langues[$langue]['community-p'];?></p> 
-          <p><a class="btn btn-default" href="http://wenda.anthonos.org/" role="button"><?php echo $langues[$langue]['community-b'];?> &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-md-4">
-          <img src="/img/ast_small.png">
-          <h2><?php echo $langues[$langue]['projects'];?></h2>
-          <p><?php echo $langues[$langue]['projects-p'];?></p>
-          <p><a class="btn btn-default" href="http://anthonos.org/download" role="button"><?php echo $langues[$langue]['projects-b'];?> &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-md-4">
-          <img src="/img/next.png">
-          <h2><?php echo $langues[$langue]['join'];?></h2>
-          <p><?php echo $langues[$langue]['join-p'];?></p>
-          <p><a class="btn btn-default" href="https://github.com/AOSC-Dev/" role="button"><?php echo $langues[$langue]['join-b'];?> &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading"><?php echo $langues[$langue]['feat-opensource'];?></h2> 
-          <p class="lead"><?php echo $langues[$langue]['feat-opensource-p'];?></p>
-        </div>
-        <div class="col-md-5">   
-        
-        <img style="float: right;" src="https://dn-anthon-wenda.qbox.me/uploads/questions/20140718/baf7fad17283f4bd920bad0169e82ee4.png" height=350 width=350>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-5">
-          <img src="https://dn-anthon-wenda.qbox.me/uploads/questions/20140718/6b3d636e55df47e0ed4d66a55eb1c908.png" height=350 width=350>
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading"><?php echo $langues[$langue]['feat-peace'];?></h2>
-          <p class="lead"><?php echo $langues[$langue]['feat-peace-p'];?></p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-    <?php include 'templates/footer.php';?>
-
-    </div><!-- /.container -->
-
-    <!-- Javascripts -->
-
+    <div class="page pg-yellow">
+    asdasdasdas
+    </div>
     <script src="https://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <script type="application/javascript">
-    $(document).ready(function() { 
-      var $img = $("img"); 
-      $img.hover(function() { 
-        $(this).attr("src",$(this).attr("src").replace("_normal","_hover")); 
-      },function() { 
-        $(this).attr("src",$(this).attr("src").replace("_hover","_normal")); 
+    <script>
+      $(document).ready(function(){
+      $(".page").height(window.clientHeight);
       });
-    });
     </script>
   </body>
 </html>

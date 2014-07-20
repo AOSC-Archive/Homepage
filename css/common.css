@@ -12,20 +12,13 @@
   height: 45px;
   width: auto;
 }
-.col-md-4 {
-  text-align: center;
+.page {
+  margin: 0;
+  padding: 0;
 }
-.my_gallery {
-  float: center;
+.pg-red {
+  background-color: red;
 }
-.my_gallery img{
-  margin: 10px;
-}
-.my-container{
-}
-.my-col-fl{
-  float: left;
-}
-.my-col-fr{
-  float: right;
+.pg-yellow {
+  background-color: yellow;
 }
