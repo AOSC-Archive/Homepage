@@ -89,7 +89,7 @@
         topPos = 0,
         leftPos = 0,
         lastAnimation = 0,
-        quietPeriod = 500,
+        quietPeriod = 0,
         paginationList = "";
 
     $.fn.transformPage = function(settings, pos, index) {

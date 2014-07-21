@@ -7,15 +7,14 @@
   <meta name="description" content="AOSC Homepage 2014 Autumn" />
   <meta name="author" content="Pete R., Jeff Bai">
   <script type="text/javascript" src="https://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
-  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
-  <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
-  <link href='suppliment.css' rel='stylesheet' type='text/css'>
-  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <script type="text/javascript" src="script/jquery.onepage-scroll.js"></script>
+  <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <link href='css/suppliment.css' rel='stylesheet' type='text/css'>
   <script>
     $(document).ready(function(){
     $(".main").onepage_scroll({
-      sectionContainer: "section",
-      responsiveFallback: 600,
+      sectionContainer: ".page_container",
+      animationTime: 600,
       loop: true
       });
     });
@@ -23,47 +22,40 @@
 </head>
 <body>
   <div class="wrapper">
-  <div class="main">
-    
-  <section class="page1">
-    <div class="page_container">
-      <h1>AnthonOS</h1>
-      <h2>Simple, while feature rich.</h2>
-      <p class="credit">AnthonOS is an "one of a kind" desktop oriented Linux distribution focusing on KDE desktop enivronment.</p>
-      <div class="btns">
-	    <a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
-      </div>
+    <div class="main">
+        <div class="page_container">
+          <h1>AnthonOS</h1>
+          <h2>Simple, while feature rich.</h2>
+          <p class="credit">AnthonOS is an "one of a kind" desktop oriented Linux distribution focusing on KDE desktop enivronment.</p>
+          <div class="btns">
+          <a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
+          </div>
+        </div>
+        
+        <div class="page_container">
+          <h1>Ready-to-use plugin</h1>
+          <h2>All you need is an HTML markup, call the script and BAM!</h2>
+          <code class="html">
+          &lt;div class="main"&gt;<br>
+        &lt;section&gt;...&lt;/section&gt;<br>
+        &lt;section&gt;...&lt;/section&gt;<br>
+        ...<br>
+            &lt;/div&gt;
+          </code>
+          
+          <code class="js">
+            $(".main").onepage_scroll();
+          </code>
+        </div>
+        
+        <div class="page_container">
+          <h1>Pretty Neat Eh?</h1>
+          <h2>You can customise the animation timing, the selector or even the animation easing using CSS3. I can't wait to see what you guys will come up with. Don't forget to grab them for free on Github'</h2>
+          <div class="btns">
+        <a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
+          </div>
+        </div>
     </div>
-  </section>
-    
-  <section class="page2">
-    <div class="page_container">
-      <h1>Ready-to-use plugin</h1>
-      <h2>All you need is an HTML markup, call the script and BAM!</h2>
-      <code class="html">
-	    &lt;div class="main"&gt;<br>
-		&lt;section&gt;...&lt;/section&gt;<br>
-		&lt;section&gt;...&lt;/section&gt;<br>
-		...<br>
-        &lt;/div&gt;
-      </code>
-      
-      <code class="js">
-        $(".main").onepage_scroll();
-      </code>
-    </div>
-  </section>
-    
-  <section class="page3">
-    <div class="page_container">
-      <h1>Pretty Neat Eh?</h1>
-      <h2>You can customise the animation timing, the selector or even the animation easing using CSS3. I can't wait to see what you guys will come up with. Don't forget to grab them for free on Github'</h2>
-      <div class="btns">
-		<a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
-      </div>
-    </div>
-  </section>
   </div>
-</div>
 </body>
 </html>
