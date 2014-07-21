@@ -1,0 +1,5 @@
+Page2 #313131 "misaka@radio-noise ~ $ uname -r \n3.10.27-tomoyo-centralpoint"
+"misaka" -> #d10000
+"~" -> #00d214
+"$" -> #00e2b5
+others -> #ededed
