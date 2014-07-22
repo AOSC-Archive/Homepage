@@ -1,61 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>AOSC - Home</title>
-  <meta name="title" content="AOSC - Home" />
-  <meta name="description" content="AOSC Homepage 2014 Autumn" />
-  <meta name="author" content="Pete R., Jeff Bai">
-  <script type="text/javascript" src="https://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
-  <script type="text/javascript" src="script/jquery.onepage-scroll.js"></script>
-  <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
-  <link href='css/suppliment.css' rel='stylesheet' type='text/css'>
-  <script>
-    $(document).ready(function(){
-    $(".main").onepage_scroll({
-      sectionContainer: ".page_container",
-      animationTime: 600,
-      loop: true
+  <head>
+    <meta charset="utf-8">
+    <title>AOSC - Home</title>
+    <meta name="title" content="AOSC - Home">
+    <meta name="description" content="AOSC Homepage 2014 Autumn">
+    <meta name="author" content="Pete R., Jeff Bai">
+    <script src="https://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
+    <script src="script/jquery.onepage-scroll.js"></script>
+    <link href='css/bootstrap.css' rel='stylesheet'>
+    <link href='css/onepage-scroll.css' rel='stylesheet'>
+    <link href='css/suppliment.css' rel='stylesheet'>
+    <link href='css/common.css' rel='stylesheet'>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".main").onepage_scroll({
+          sectionContainer: ".page_container",
+          animationTime: 600,
+        });
       });
-    });
-  </script>
-</head>
-<body>
-  <div class="wrapper">
-    <div class="main">
-        <div class="page_container">
-          <h1>AnthonOS</h1>
-          <h2>Simple, while feature rich.</h2>
-          <p class="credit">AnthonOS is an "one of a kind" desktop oriented Linux distribution focusing on KDE desktop enivronment.</p>
-          <div class="btns">
-          <a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="main">
+          <div class="page_container container">
+            <h1>AnthonOS</h1>
+            <h2>Simple, while feature rich.</h2>
+            <p>AnthonOS is an "one of a kind" desktop oriented Linux distribution focusing on KDE desktop enivronment.</p>
+            <div>
+              <a class="btn btn-success" role="button" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
+            </div>
           </div>
-        </div>
-        
-        <div class="page_container">
-          <h1>Ready-to-use plugin</h1>
-          <h2>All you need is an HTML markup, call the script and BAM!</h2>
-          <code class="html">
-          &lt;div class="main"&gt;<br>
-        &lt;section&gt;...&lt;/section&gt;<br>
-        &lt;section&gt;...&lt;/section&gt;<br>
-        ...<br>
-            &lt;/div&gt;
-          </code>
           
-          <code class="js">
-            $(".main").onepage_scroll();
-          </code>
-        </div>
-        
-        <div class="page_container">
-          <h1>Pretty Neat Eh?</h1>
-          <h2>You can customise the animation timing, the selector or even the animation easing using CSS3. I can't wait to see what you guys will come up with. Don't forget to grab them for free on Github'</h2>
-          <div class="btns">
-        <a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
+          <div class="page_container container">
+            <h1>Ready-to-use plugin</h1>
+            <h2>All you need is an HTML markup, call the script and BAM!</h2>
           </div>
-        </div>
+          
+          <div class="page_container container">
+            <h1>Pretty Neat Eh?</h1>
+            <h2>You can customise the animation timing, the selector or even the animation easing using CSS3. I can't wait to see what you guys will come up with. Don't forget to grab them for free on Github'</h2>
+            <div>
+              <a class="btn btn-danger" role="button" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
+            </div>
+          </div>
+      </div>
     </div>
-  </div>
-</body>
+    <script type="text/javascript" src="script/bootstrap.min.js"></script>
+  </body>
 </html>
