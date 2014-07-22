@@ -20,16 +20,40 @@
         });
       });
     </script>
+    <style type="text/css">
+      .background {
+        position: absolute;
+        z-index: -1;
+      }
+      .background img {
+        width: 100%;
+      }
+      #page1 .container {
+        height: 100%;
+        color: white;
+      }
+      #page1 .container .row {
+        position:absolute;
+        top: 20%;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
       <div class="main">
-          <div class="page_container container">
-            <h1>AnthonOS</h1>
-            <h2>Simple, while feature rich.</h2>
-            <p>AnthonOS is an "one of a kind" desktop oriented Linux distribution focusing on KDE desktop enivronment.</p>
-            <div>
-              <a class="btn btn-success" role="button" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
+          <div class="page_container" id="page1">
+            <div class="background">
+              <img src="images/paris.jpg">
+            </div>
+            <div class="container">
+              <div class="row">
+                <h1>AnthonOS</h1>
+                <h2>Simple, while feature rich.</h2>
+                <p>AnthonOS is an "one of a kind" desktop oriented Linux distribution focusing on KDE desktop enivronment.</p>
+                <div>
+                  <a class="btn btn-success" role="button" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
+                </div>
+              </div>
             </div>
           </div>
           
