@@ -1,0 +1,88 @@
+# TODO for AOSC homepage
+# Feel free to leave comment here, here only.
+
+# CONTENT
+
+-> Community
+   Welcome to AOSC, the community of:
+   - Freedom
+   - Tolarency
+   - Open Source Computing
+   
+   AOSC - Anthon Open Source Community runs a bucketful of open source projects. AOSC OS is the biggest project of the community (a link to AOSC OS developer corner?).
+   AOSC is currently led by students. While almost all contributors are students in high schools or colleges, we strongly welcome everyone to try, use or develop our projects.
+
+-> AnthonOS
+   Description: A "one of a kind" desktop oriented Linux distribution that...
+                - Chooses KDE as primary desktop environment
+                - Features graphical interface for almost all daily usage
+                - Pushes newer software packages to your desktop while keeping it running
+   Short Moto: Simple, while feature rich.
+
+-> CentralPoint
+   Description: A lightweight, turn-key server Linux distribution that...
+                - Focuses on school or home usage
+                - Sees the importance of stability and security
+                - Features a whole suite of server management and starter kit
+   Short Moto: Tom, come out for this. Do, says Misaka.
+
+-> AOSC OS
+   Description: The distribution project behind AnthonOS and CentralPoint that...
+                - Provides all bleeding edge technology and packages before spring of the next year
+                - Kills newbies and drunk while it turns of the light
+                - Spoils developers (seriously)
+   Short Moto: Foo, while feature Bar.
+   
+-> Anthon Starter
+   Description: A gateway to open source computing that...
+                - Aims for UNetbootin for boot deployment
+                - Aims for Debian Installer for system installation
+                - ... Under Windows
+   Short Moto: Start me up!
+   
+-> LinkC
+   Description: A simple IM client based on Qt and use POSIX socket that...
+                - Features an independent protocol for both UDP and HTTP
+                - Has both Curses and Qt interface
+                - Is still being worked on
+   Short Moto: Ding... tada.
+   
+-> Projects
+   Description: AOSC hosts a whole bunch of open source and free projects, including...
+                - w3m after its upstream stumpled into silence
+                - Localization projects that actually goes back to upstream
+                - Anything reasonable that you can imagine
+   Short Moto: Better projects, better community.
+   
+-> Participate
+   [ It may take pages, let's discuss here. ]
+   
+[ OF COURSE THERE SHOULD BE MORE PAGES! ]
+   
+# Basic Structure.
+
+---------------------------------------------------------------------------------------
+|
+|
+|
+|    Title
+|    Short Moto
+|    Moto foooooooooooooooooooo
+|         - fooo
+|         - mooo
+|         - baaa
+|
+|    [ A Button Here ]
+|
+|
+|                                                [  Animations wow!  ]
+|
+|
+|
+---------------------------------------------------------------------------------------
+
+Crosses over from page to page, just imagine. Left... to right...
+
+# Animations
+
+@LionNatsu the king of frontend, woohoo!
