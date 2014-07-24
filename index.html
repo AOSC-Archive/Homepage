@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>AOSC - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="title" content="AOSC - Home">
     <meta name="description" content="AOSC Homepage 2014 Autumn">
     <meta name="author" content="Pete R., Jeff Bai">
@@ -17,8 +18,25 @@
         $(".main").onepage_scroll({
           sectionContainer: ".page_container",
           animationTime: 600,
+          loop: false,
         });
       });
+    var old_y=0,yn=0;
+    $(document).mouseup(function(){
+      yn=0;
+    });
+    $(document).mousedown(function(){
+      old_y=event.clientY+document.body.scrollTop;
+      yn=1;return false;
+    });
+    $(document).mousemove(function(){
+      if(yn==1){
+        var y=event.clientY+document.body.scrollTop;
+        if(Math.abs(y-old_y)<50)return;
+        if((y-old_y)<0){$(".main").moveDown();yn=0;}
+        if((y-old_y)>0){$(".main").moveUp();yn=0;}
+      }
+    });
     </script>
     <style type="text/css">
       .background {
@@ -27,12 +45,14 @@
       }
       .background img {
         width: 100%;
+        min-width: 1000px;
       }
       #page1 .container {
         height: 100%;
         color: white;
       }
       #page1 .container .row {
+        margin: 20px;
         position:absolute;
         top: 20%;
       }
@@ -57,16 +77,26 @@
             </div>
           </div>
           
-          <div class="page_container container">
-            <h1>Ready-to-use plugin</h1>
-            <h2>All you need is an HTML markup, call the script and BAM!</h2>
+          <div class="page_container">
+            <div class="background">
+              <img src="images/paris.jpg">
+            </div>
+            <div class="container">
+              <h1>Ready-to-use plugin</h1>
+              <h2>All you need is an HTML markup, call the script and BAM!</h2>
+            </div>
           </div>
           
-          <div class="page_container container">
+          <div class="page_container">
+            <div class="background">
+              <img src="images/paris.jpg">
+            </div>
+            <div class="container">
             <h1>Pretty Neat Eh?</h1>
-            <h2>You can customise the animation timing, the selector or even the animation easing using CSS3. I can't wait to see what you guys will come up with. Don't forget to grab them for free on Github'</h2>
-            <div>
-              <a class="btn btn-danger" role="button" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
+              <h2>You can customise the animation timing, the selector or even the animation easing using CSS3. I can't wait to see what you guys will come up with. Don't forget to grab them for free on Github'</h2>
+              <div>
+                <a class="btn btn-danger" role="button" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
+              </div>
             </div>
           </div>
       </div>
