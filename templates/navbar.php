@@ -23,7 +23,7 @@ $nav_langues = array(
 		'forums' => '论坛',
 		'dl' => '下载',
 		'feedback' => '反馈',
-		'repo' => '源码',
+		'repo' => '仓库',
 		'wiki' => '百科',
 		'developers' => '开发',
 		'github' => 'GitHub',
@@ -38,7 +38,7 @@ $nav_langues = array(
 		'forums' => '論壇',
 		'dl' => '下載',
 		'feedback' => '反饋',
-		'repo' => '源碼',
+		'repo' => '倉庫',
 		'wiki' => '社區百科',
 		'developers' => '開發',
 		'github' => 'GitHub',
@@ -81,7 +81,7 @@ $nav_langues = array(
                     <ul class="dropdown-menu">
                       <li><a href="https://wenda.anthonos.org/"><?php echo $nav_langues[$langue]['forums'];?></a></li>
                       <li><a href="https://bugs.anthonos.org/"><?php echo $nav_langues[$langue]['feedback'];?></a></li>
-                      <li><a href="http://repo.anthonos.org/"><?php echo $nav_langues[$langue]['repo'];?></a></li>
+                      <li><a href="http://anthon.dormforce.net/status/"><?php echo $nav_langues[$langue]['repo'];?></a></li>
                       <li><a href="https://wiki.anthonos.org/"><?php echo $nav_langues[$langue]['wiki'];?></a></li>
                     </ul>
                   </li>
