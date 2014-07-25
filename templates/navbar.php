@@ -81,7 +81,7 @@ $nav_langues = array(
                     <ul class="dropdown-menu">
                       <li><a href="https://wenda.anthonos.org/"><?php echo $nav_langues[$langue]['forums'];?></a></li>
                       <li><a href="https://bugs.anthonos.org/"><?php echo $nav_langues[$langue]['feedback'];?></a></li>
-                      <li><a href="http://anthon.dormforce.net/status/"><?php echo $nav_langues[$langue]['repo'];?></a></li>
+                      <li><a href="https://www.anthonos.org/status/"><?php echo $nav_langues[$langue]['repo'];?></a></li>
                       <li><a href="https://wiki.anthonos.org/"><?php echo $nav_langues[$langue]['wiki'];?></a></li>
                     </ul>
                   </li>
